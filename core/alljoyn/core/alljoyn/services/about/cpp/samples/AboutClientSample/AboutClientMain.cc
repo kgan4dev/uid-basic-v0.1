@@ -33,8 +33,7 @@ using namespace ajn;
 using namespace services;
 
 static BusAttachment* busAttachment;
-UIDUtils *myUIDUtils;
-AJDeviceProfile *myAJDeviceProfile = new AJDeviceProfile;
+UIDUtils *myUIDUtils = new UIDUtils();
 
 static volatile sig_atomic_t s_interrupt = false;
 
@@ -149,8 +148,7 @@ void ViewAboutServiceData(qcc::String const& busName, SessionId id) {
                         std::cout << "Key name = " << std::setfill(' ') << std::setw(20) << std::left << key.c_str()
                                   << " value = " << value.v_string.str << std::endl;
 			if (!strcmp(it->c_str(),"en")) {
-//				xmlNewChild(AJRootNode,NULL,BAD_CAST key.c_str(),BAD_CAST value.v_string.str);
-				myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,(std::string) key.c_str(),(std::string)value.v_string.str);
+				myUIDUtils->setAJDeviceProfileField((std::string) key.c_str(),(std::string)value.v_string.str);
 			}
 
                     } else if (value.typeId == ALLJOYN_ARRAY && value.Signature().compare("as") == 0) {
@@ -169,8 +167,7 @@ void ViewAboutServiceData(qcc::String const& busName, SessionId id) {
                         std::cout << std::endl;
 
 			if (!strcmp(it->c_str(),"en")) {
-//                                xmlNewChild(AJRootNode,NULL,BAD_CAST key.c_str(),BAD_CAST AJLang.str().c_str());
-				myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,(std::string) key.c_str(),AJLang.str());
+				myUIDUtils->setAJDeviceProfileField((std::string) key.c_str(),AJLang.str());
                         }
 
                     } else if (value.typeId == ALLJOYN_BYTE_ARRAY) {
@@ -187,18 +184,17 @@ void ViewAboutServiceData(qcc::String const& busName, SessionId id) {
                         std::cout << std::nouppercase << std::dec << std::endl;
 			AJIds << std::nouppercase << std::dec;
 			if (!strcmp(it->c_str(),"en")) {
-//                                xmlNewChild(AJRootNode,NULL,BAD_CAST key.c_str(),BAD_CAST AJIds.str().c_str());
-				myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,(std::string) key.c_str(),AJIds.str());
+				myUIDUtils->setAJDeviceProfileField((std::string) key.c_str(),AJIds.str());
                         }
                     }
                 }                                     // end of for
             }
         }
 
-	myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,"BusName", (std::string )busName.c_str());
-	myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,"Status", "Active");
+	myUIDUtils->setAJDeviceProfileField("BusName", (std::string )busName.c_str());
+	myUIDUtils->setAJDeviceProfileField("Status", "Active");
 
-	myUIDUtils->insertAJDeviceProfileToDb (myAJDeviceProfile);
+	myUIDUtils->insertAJDeviceProfileToDb ();
 
         std::cout << std::endl << busName.c_str() << " AboutClient GetVersion" << std::endl;
         std::cout << "-----------------------------------" << std::endl;
@@ -419,18 +415,15 @@ void WaitForSigInt(void)
 
 	if ( !DbStatus.compare("filled") ) {
 
-		sleep(1);
-
-		if ( busAttachment->Ping(myAJDeviceProfile->BusName.c_str(),1000) == ER_OK ) {
+		if ( busAttachment->Ping(myUIDUtils->getAJDeviceProfileField("BusName").c_str(),1000) == ER_OK ) {
 			/* Success status goes here*/
-			myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,"Status", "Active");
+			myUIDUtils->setAJDeviceProfileField("Status", "Active");
 		} else {
 			/* Failure status goes here*/
-			myUIDUtils->setAJDeviceProfileField(myAJDeviceProfile,"Status", "Inactive");
+			myUIDUtils->setAJDeviceProfileField("Status", "Inactive");
 		}
 
-		 myUIDUtils->updateAJDeviceBusStatusToDb (myAJDeviceProfile);
-	
+		myUIDUtils->updateAJDeviceBusStatusToDb ();
 		sleep(1);
 	}
     }
@@ -462,7 +455,7 @@ int main(int argc, char**argv, char**envArg)
 
     // Install SIGINT handler
     signal(SIGINT, SigIntHandler);
-    UIDUtils *myUIDUtils = new UIDUtils();
+//    UIDUtils *myUIDUtils = new UIDUtils();
 
     busAttachment = new BusAttachment("AboutClientMain", true);
 

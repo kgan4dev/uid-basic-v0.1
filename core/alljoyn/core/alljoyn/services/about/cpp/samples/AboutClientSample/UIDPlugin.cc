@@ -11,15 +11,15 @@ UIDUtils::UIDUtils() {
 UIDUtils::~UIDUtils() {
 }
 
-void UIDUtils::updateAJDeviceBusStatusToDb (AJDeviceProfile *myAJDeviceProfile) {
+void UIDUtils::updateAJDeviceBusStatusToDb () {
         string hostname = "localhost";
         string username = "root";
         string password = "vedams";
 
 	MYSQL *conn;
 
-        string updateTable = "UPDATE UIDTestTable SET BusName='" + myAJDeviceProfile->BusName + "',\
-Status='" + myAJDeviceProfile->Status + "' WHERE DeviceName='" + myAJDeviceProfile->DeviceName + "'";
+        string updateTable = "UPDATE UIDTestTable SET BusName='" + myAJDeviceProfile.BusName + "',\
+Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfile.DeviceName + "'";
 
         if ( (conn = mysql_init(NULL)) == NULL ) {
                 cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
@@ -44,7 +44,7 @@ Status='" + myAJDeviceProfile->Status + "' WHERE DeviceName='" + myAJDeviceProfi
         mysql_close(conn);
 }
 
-void UIDUtils::insertAJDeviceProfileToDb (AJDeviceProfile *myAJDeviceProfile) {
+void UIDUtils::insertAJDeviceProfileToDb () {
 	string hostname = "localhost";
 	string username = "root";
 	string password = "vedams";
@@ -72,19 +72,19 @@ Status VARCHAR(30) NOT NULL)";
 	string insertTable = "INSERT INTO UIDTestTable (AJSoftwareVersion, AppId,\
 AppName,DateOfManufacture, DefaultLanguage,Description, DeviceId, DeviceName, HardwareVersion,\
 Manufacturer,ModelNumber, SoftwareVersion, SupportUrl, SupportedLanguages, BusName, Status )\
-VALUES ( '" + myAJDeviceProfile->AJSoftwareVersion + "','" + myAJDeviceProfile->AppId + "','\
-" + myAJDeviceProfile->AppName + "','" + myAJDeviceProfile->DateOfManufacture + "','\
-" + myAJDeviceProfile->DefaultLanguage + "','" + myAJDeviceProfile->Description + "','\
-" + myAJDeviceProfile->DeviceId + "','" + myAJDeviceProfile->DeviceName + "','\
-" + myAJDeviceProfile->HardwareVersion + "','" + myAJDeviceProfile->Manufacturer + "','\
-" + myAJDeviceProfile->ModelNumber + "','" + myAJDeviceProfile->SoftwareVersion + "','\
-" + myAJDeviceProfile->SupportUrl + "','" + myAJDeviceProfile->SupportedLanguages + "','\
-" + myAJDeviceProfile->BusName + "','" + myAJDeviceProfile->Status + "')";
+VALUES ( '" + myAJDeviceProfile.AJSoftwareVersion + "','" + myAJDeviceProfile.AppId + "','\
+" + myAJDeviceProfile.AppName + "','" + myAJDeviceProfile.DateOfManufacture + "','\
+" + myAJDeviceProfile.DefaultLanguage + "','" + myAJDeviceProfile.Description + "','\
+" + myAJDeviceProfile.DeviceId + "','" + myAJDeviceProfile.DeviceName + "','\
+" + myAJDeviceProfile.HardwareVersion + "','" + myAJDeviceProfile.Manufacturer + "','\
+" + myAJDeviceProfile.ModelNumber + "','" + myAJDeviceProfile.SoftwareVersion + "','\
+" + myAJDeviceProfile.SupportUrl + "','" + myAJDeviceProfile.SupportedLanguages + "','\
+" + myAJDeviceProfile.BusName + "','" + myAJDeviceProfile.Status + "')";
 
-        string updateTable = "UPDATE UIDTestTable SET BusName='" + myAJDeviceProfile->BusName + "',\
-Status='" + myAJDeviceProfile->Status + "' WHERE DeviceName='" + myAJDeviceProfile->DeviceName + "'";
+        string updateTable = "UPDATE UIDTestTable SET BusName='" + myAJDeviceProfile.BusName + "',\
+Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfile.DeviceName + "'";
 
-	string searchTable = "SELECT * FROM UIDTestTable WHERE DeviceName='" + myAJDeviceProfile->DeviceName + "'";;
+	string searchTable = "SELECT * FROM UIDTestTable WHERE DeviceName='" + myAJDeviceProfile.DeviceName + "'";;
 
 	if ( (conn = mysql_init(NULL)) == NULL ) {
 		cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
@@ -134,7 +134,7 @@ Status='" + myAJDeviceProfile->Status + "' WHERE DeviceName='" + myAJDeviceProfi
 		}
 	} else {
 		string temp = (string)row[7];
-		if(!temp.compare(myAJDeviceProfile->DeviceName)) {
+		if(!temp.compare(myAJDeviceProfile.DeviceName)) {
 		        if (mysql_query(conn, updateTable.c_str())) {
 		                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
 		                exit(0);
@@ -152,39 +152,77 @@ Status='" + myAJDeviceProfile->Status + "' WHERE DeviceName='" + myAJDeviceProfi
 	mysql_close(conn);
 }
 
-void UIDUtils::setAJDeviceProfileField(AJDeviceProfile *myAJDeviceProfile,string key,string value) {
+string UIDUtils::getAJDeviceProfileField(string key) {
 	if (!key.compare("AJSoftwareVersion")) {
-		myAJDeviceProfile->AJSoftwareVersion = value;
+		return myAJDeviceProfile.AJSoftwareVersion;
 	} else if (!key.compare("AppId")) {
-		myAJDeviceProfile->AppId = value;
+		return myAJDeviceProfile.AppId;
 	} else if (!key.compare("AppName")) {
-		myAJDeviceProfile->AppName = value;
+		return myAJDeviceProfile.AppName;
 	} else if (!key.compare("DateOfManufacture")) {
-		myAJDeviceProfile->DateOfManufacture = value;
+		return myAJDeviceProfile.DateOfManufacture;
 	} else if (!key.compare("DefaultLanguage")) {
-		myAJDeviceProfile->DefaultLanguage = value;
+		return myAJDeviceProfile.DefaultLanguage;
 	} else if (!key.compare("Description")) {
-		myAJDeviceProfile->Description = value;
+		return myAJDeviceProfile.Description;
 	} else if (!key.compare("DeviceId")) {
-		myAJDeviceProfile->DeviceId = value;
+		return myAJDeviceProfile.DeviceId;
 	} else if (!key.compare("DeviceName")) {
-		myAJDeviceProfile->DeviceName = value;
+		return myAJDeviceProfile.DeviceName;
 	} else if (!key.compare("HardwareVersion")) {
-		myAJDeviceProfile->HardwareVersion = value;
+		return myAJDeviceProfile.HardwareVersion;
 	} else if (!key.compare("Manufacturer")) {
-		myAJDeviceProfile->Manufacturer = value;
+		return myAJDeviceProfile.Manufacturer;
 	} else if (!key.compare("ModelNumber")) {
-		myAJDeviceProfile->ModelNumber = value;
+		return myAJDeviceProfile.ModelNumber;
 	} else if (!key.compare("SoftwareVersion")) {
-		myAJDeviceProfile->SoftwareVersion = value;
+		return myAJDeviceProfile.SoftwareVersion;
 	} else if (!key.compare("SupportUrl")) {
-		myAJDeviceProfile->SupportUrl = value;
+		return myAJDeviceProfile.SupportUrl;
 	} else if (!key.compare("SupportedLanguages")) {
-		myAJDeviceProfile->SupportedLanguages = value;
+		return myAJDeviceProfile.SupportedLanguages;
 	} else if (!key.compare("BusName")) {
-		myAJDeviceProfile->BusName = value;
+		return myAJDeviceProfile.BusName;
 	} else if (!key.compare("Status")) {
-		myAJDeviceProfile->Status = value;
+		return myAJDeviceProfile.Status;
+	} else {
+		cerr << "UIDUtils::getAJDeviceProfileField Invalid call" << endl;
+	}
+}
+
+void UIDUtils::setAJDeviceProfileField(string key,string value) {
+	if (!key.compare("AJSoftwareVersion")) {
+		myAJDeviceProfile.AJSoftwareVersion = value;
+	} else if (!key.compare("AppId")) {
+		myAJDeviceProfile.AppId = value;
+	} else if (!key.compare("AppName")) {
+		myAJDeviceProfile.AppName = value;
+	} else if (!key.compare("DateOfManufacture")) {
+		myAJDeviceProfile.DateOfManufacture = value;
+	} else if (!key.compare("DefaultLanguage")) {
+		myAJDeviceProfile.DefaultLanguage = value;
+	} else if (!key.compare("Description")) {
+		myAJDeviceProfile.Description = value;
+	} else if (!key.compare("DeviceId")) {
+		myAJDeviceProfile.DeviceId = value;
+	} else if (!key.compare("DeviceName")) {
+		myAJDeviceProfile.DeviceName = value;
+	} else if (!key.compare("HardwareVersion")) {
+		myAJDeviceProfile.HardwareVersion = value;
+	} else if (!key.compare("Manufacturer")) {
+		myAJDeviceProfile.Manufacturer = value;
+	} else if (!key.compare("ModelNumber")) {
+		myAJDeviceProfile.ModelNumber = value;
+	} else if (!key.compare("SoftwareVersion")) {
+		myAJDeviceProfile.SoftwareVersion = value;
+	} else if (!key.compare("SupportUrl")) {
+		myAJDeviceProfile.SupportUrl = value;
+	} else if (!key.compare("SupportedLanguages")) {
+		myAJDeviceProfile.SupportedLanguages = value;
+	} else if (!key.compare("BusName")) {
+		myAJDeviceProfile.BusName = value;
+	} else if (!key.compare("Status")) {
+		myAJDeviceProfile.Status = value;
 	} else {
 		cerr << "UIDUtils::setAJDeviceProfileField Invalid call" << endl;
 	}

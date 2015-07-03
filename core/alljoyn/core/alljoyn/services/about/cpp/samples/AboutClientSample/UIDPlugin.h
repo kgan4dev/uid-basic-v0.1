@@ -39,20 +39,15 @@ struct AJDeviceNotification {
 };
 
 class UIDUtils {
-	AJDeviceProfile *myAJDeviceProfile;
-
-	struct AJDeviceNotification *myAJDeviceNotification;	
-	string myAJDeviceNotificationStatus;
-
+	AJDeviceProfile myAJDeviceProfile;
 	MYSQL *conn;
 
 	public:
-		void setAJDeviceProfileField(AJDeviceProfile *myAJDeviceProfile,string key, string value);
+		void setAJDeviceProfileField(string key, string value);
+		string getAJDeviceProfileField(string key);
 
-		void setAJDeviceNotificationField(unsigned int key_no,string value);
-
-		void insertAJDeviceProfileToDb(AJDeviceProfile *myAJDeviceProfile);
-		void updateAJDeviceBusStatusToDb(AJDeviceProfile *myAJDeviceProfile);
+		void insertAJDeviceProfileToDb();
+		void updateAJDeviceBusStatusToDb();
 
 		UIDUtils();
 		~UIDUtils();

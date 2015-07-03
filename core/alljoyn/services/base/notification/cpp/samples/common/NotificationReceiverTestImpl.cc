@@ -78,8 +78,8 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 
         for (std::vector<NotificationText>::const_iterator vecMessage_it = vecMessages.begin(); vecMessage_it != vecMessages.end(); ++vecMessage_it) {
             std::cout << "Language: " << vecMessage_it->getLanguage().c_str() << "  Message: " << vecMessage_it->getText().c_str() << std::endl;
-	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Language",BAD_CAST vecMessage_it->getLanguage().c_str());
-	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Message",BAD_CAST vecMessage_it->getText().c_str());
+//	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Language",BAD_CAST vecMessage_it->getLanguage().c_str());
+//	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Message",BAD_CAST vecMessage_it->getText().c_str());
         }
 
         // Print out any other parameters sent in
