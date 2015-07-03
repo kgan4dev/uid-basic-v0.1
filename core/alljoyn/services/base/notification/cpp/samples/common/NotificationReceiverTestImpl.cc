@@ -21,7 +21,6 @@
 #include <iostream>
 #include <algorithm>
 #include <sstream>
-#include "UIDPlugin.h"
 #include <string>
 
 using namespace ajn;
@@ -52,14 +51,6 @@ NotificationReceiverTestImpl::~NotificationReceiverTestImpl() {
 
 void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 
-    xmlDocPtr AJDoc;
-    xmlNodePtr AJRootNode;
-    xmlChar *AJData;
-
-    AJDoc = xmlNewDoc(BAD_CAST "1.0");
-    AJRootNode = xmlNewNode(NULL,BAD_CAST "AJNotification");
-    xmlDocSetRootElement(AJDoc, AJRootNode);
-
     qcc::String appName = notification.getAppName();
     // If applications list is empty or the name exists in the filter list then print the notification
     if ((m_Applications.size() == 0) || (find(m_Applications.begin(), m_Applications.end(), appName) !=  m_Applications.end())) {
@@ -73,7 +64,7 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
         std::cout << "Message Type " << notification.getMessageType() << " " << MessageTypeUtil::getMessageTypeString(notification.getMessageType()).c_str() << std::endl;
         std::cout << "Notification version: " << notification.getVersion() << std::endl;
 
-	xmlNewChild(AJRootNode,NULL,BAD_CAST "MessageId",BAD_CAST std::to_string(notification.getMessageId()).c_str());
+/*	xmlNewChild(AJRootNode,NULL,BAD_CAST "MessageId",BAD_CAST std::to_string(notification.getMessageId()).c_str());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "DeviceId",BAD_CAST notification.getDeviceId());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "DeviceName",BAD_CAST notification.getDeviceName());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "AppId",BAD_CAST notification.getAppId());
@@ -81,7 +72,7 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "SenderBusName",BAD_CAST notification.getSenderBusName());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "MessageType",BAD_CAST MessageTypeUtil::getMessageTypeString(notification.getMessageType()).c_str());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "Version",BAD_CAST std::to_string(notification.getVersion()).c_str());
-
+*/
         // get vector of text messages and iterate through it
         std::vector<NotificationText> vecMessages = notification.getText();
 
@@ -134,15 +125,7 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 
         std::cout << "******************** End New Message Received ********************" << std::endl << std::endl;
 
-	xmlNewChild(AJRootNode,NULL,BAD_CAST "Status",BAD_CAST "UNREAD");
-
-	xmlDocDumpMemory(AJDoc,&AJData,NULL);
-	xmlFreeDoc(AJDoc);
-
-	UIDUtils *httpHandler = new UIDUtils();	
-	httpHandler->http_post("http://127.0.0.1/uid-basic/controller/core/notification_device.php",(char *)AJData);
-	sleep(3);
-	delete httpHandler;
+//	xmlNewChild(AJRootNode,NULL,BAD_CAST "Status",BAD_CAST "UNREAD");
 
         Notification nonConstNotification(notification);
 
