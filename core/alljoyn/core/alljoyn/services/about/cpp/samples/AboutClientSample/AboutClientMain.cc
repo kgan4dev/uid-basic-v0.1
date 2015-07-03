@@ -415,6 +415,8 @@ void WaitForSigInt(void)
 
 	if ( !DbStatus.compare("filled") ) {
 
+		myUIDUtils->DeviceToCheckStatus ();
+
 		if ( busAttachment->Ping(myUIDUtils->getAJDeviceProfileField("BusName").c_str(),1000) == ER_OK ) {
 			/* Success status goes here*/
 			myUIDUtils->setAJDeviceProfileField("Status", "Active");

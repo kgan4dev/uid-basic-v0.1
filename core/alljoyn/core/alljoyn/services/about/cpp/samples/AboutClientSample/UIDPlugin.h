@@ -48,6 +48,7 @@ class UIDUtils {
 
 		void insertAJDeviceProfileToDb();
 		void updateAJDeviceBusStatusToDb();
+		void DeviceToCheckStatus();
 
 		UIDUtils();
 		~UIDUtils();

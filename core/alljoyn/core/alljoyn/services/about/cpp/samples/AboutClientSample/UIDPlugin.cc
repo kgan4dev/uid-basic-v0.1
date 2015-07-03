@@ -1,7 +1,7 @@
 #include "UIDPlugin.h"
+#include <iostream>
 #include <stdlib.h>
 #include <string.h>
-#include <iostream>
 
 using namespace std;
 
@@ -11,7 +11,105 @@ UIDUtils::UIDUtils() {
 UIDUtils::~UIDUtils() {
 }
 
-void UIDUtils::updateAJDeviceBusStatusToDb () {
+int NoOfDevices;
+
+void UIDUtils::DeviceToCheckStatus ()
+{
+        string hostname = "localhost";
+        string username = "root";
+        string password = "vedams";
+
+        MYSQL *conn;
+	MYSQL_RES *result;
+	MYSQL_ROW row;
+
+        string searchTable = "SELECT * FROM UIDTestTable";	
+	string countTableRows = "SELECT COUNT(*) FROM UIDTestTable";
+
+        if ( (conn = mysql_init(NULL)) == NULL ) {
+                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+                exit(0);
+        }
+
+        if (mysql_real_connect(conn, hostname.c_str(), username.c_str(), password.c_str(), NULL, 0, NULL, 0) == NULL) {
+                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+                exit(0);
+        }
+
+        if (mysql_query(conn, "use UIDTest")) {
+                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+                exit(0);
+        }
+
+	if ( NoOfDevices == 0 ) {
+	        if (mysql_query(conn,countTableRows.c_str())) {
+        	        cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+                	exit(0);
+		}
+
+		result = mysql_store_result(conn);
+	
+		if(result == NULL) {
+			cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+			exit(0);
+		}
+
+		row =  mysql_fetch_row(result);
+
+		/* Number of Devices registered in Database */
+		NoOfDevices = atoi(row[0]);
+
+//		cout << " NoOfDevices in Database : " << NoOfDevices << endl; 
+
+		mysql_free_result(result);
+	}
+
+        if (mysql_query(conn, searchTable.c_str())) {
+                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+                exit(0);
+	}
+
+	result = mysql_store_result(conn);
+
+	if(result == NULL) {
+		cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+		exit(0);
+	}
+
+	int temp = NoOfDevices;
+
+	while((row =  mysql_fetch_row(result))) {
+		if ( --temp ) { 
+			continue;
+		} else {
+			myAJDeviceProfile.AJSoftwareVersion = (string) row[0]; 
+			myAJDeviceProfile.AppId = (string) row[1];
+			myAJDeviceProfile.AppName = (string) row[2];
+			myAJDeviceProfile.DateOfManufacture = (string) row[3];
+			myAJDeviceProfile.DefaultLanguage = (string) row[4];
+			myAJDeviceProfile.Description = (string) row[5];
+			myAJDeviceProfile.DeviceId = (string) row[6];
+			myAJDeviceProfile.DeviceName = (string) row[7];
+			myAJDeviceProfile.HardwareVersion = (string) row[8];
+			myAJDeviceProfile.Manufacturer = (string) row[9];
+			myAJDeviceProfile.ModelNumber = (string) row[10];
+			myAJDeviceProfile.SoftwareVersion = (string) row[11];
+			myAJDeviceProfile.SupportUrl = (string) row[12];
+			myAJDeviceProfile.SupportedLanguages = (string) row[13];
+			myAJDeviceProfile.BusName = (string) row[14];
+			myAJDeviceProfile.Status = (string) row[15];
+		}
+	}
+  
+	--NoOfDevices;
+
+	mysql_free_result(result);
+  
+        mysql_close(conn);
+}
+
+void UIDUtils::updateAJDeviceBusStatusToDb () 
+{
         string hostname = "localhost";
         string username = "root";
         string password = "vedams";
@@ -20,6 +118,8 @@ void UIDUtils::updateAJDeviceBusStatusToDb () {
 
         string updateTable = "UPDATE UIDTestTable SET BusName='" + myAJDeviceProfile.BusName + "',\
 Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfile.DeviceName + "'";
+
+	string searchTable = "SELECT * FROM UIDTestTable WHERE DeviceName='" + myAJDeviceProfile.DeviceName + "'";
 
         if ( (conn = mysql_init(NULL)) == NULL ) {
                 cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
@@ -41,6 +141,36 @@ Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfil
                 exit(0);
         }
 	
+	if (mysql_query(conn, searchTable.c_str())) {
+		cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+		exit(0);
+	}
+
+	MYSQL_RES *result = mysql_store_result(conn);
+
+	if(result == NULL) {
+		cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+		exit(0);
+	}
+
+	MYSQL_ROW row;
+
+	if(!(row = mysql_fetch_row(result))) {
+		cerr << "MYSQL ERROR : Empty Table cannot update"  << endl;
+//		exit(0);
+	} else {
+		string temp = (string)row[7];
+		if(!temp.compare(myAJDeviceProfile.DeviceName)) {
+			/* Update the status of Device Bus */
+		        if (mysql_query(conn, updateTable.c_str())) {
+		       	        cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+		               	exit(0);
+		        }
+		}
+	}
+  
+	mysql_free_result(result);
+  
         mysql_close(conn);
 }
 
@@ -123,30 +253,33 @@ Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfil
 		exit(0);
 	}
 
-	int num_fields = mysql_num_fields(result);
-
 	MYSQL_ROW row;
 
+	/* If Table is empty, Insert new table*/
 	if(!(row = mysql_fetch_row(result))) {
 		if (mysql_query(conn, insertTable.c_str())) {
 			cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
 			exit(0);
 		}
 	} else {
-		string temp = (string)row[7];
-		if(!temp.compare(myAJDeviceProfile.DeviceName)) {
-		        if (mysql_query(conn, updateTable.c_str())) {
-		                cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
-		                exit(0);
-		        }
-		} else {
-			if (mysql_query(conn, insertTable.c_str())) {
-				cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
-				exit(0);
-			}
-		}		
+		do {
+			string temp = (string)row[7];
+			if(!temp.compare(myAJDeviceProfile.DeviceName)) {
+				/* If Device already exists, Change busName to new */
+			        if (mysql_query(conn, updateTable.c_str())) {
+		        	        cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+		                	exit(0);
+			        }
+			} else {
+				/* If Device not exists, insert new table */
+				if (mysql_query(conn, insertTable.c_str())) {
+					cerr << "MYSQL ERROR : " <<  mysql_error(conn)  << endl;
+					exit(0);
+				}
+			}		
+		}while((row = mysql_fetch_row(result)));
 	}
-  
+
 	mysql_free_result(result);
 
 	mysql_close(conn);
@@ -187,6 +320,7 @@ string UIDUtils::getAJDeviceProfileField(string key) {
 		return myAJDeviceProfile.Status;
 	} else {
 		cerr << "UIDUtils::getAJDeviceProfileField Invalid call" << endl;
+		return "Invalid call";
 	}
 }
 
