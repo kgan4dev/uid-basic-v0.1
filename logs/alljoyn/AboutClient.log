@@ -1,0 +1,10 @@
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Wed May 06 08:15:29 UTC 2015 by vedams - Git: alljoyn branch: '(detached from v14.06a-rc1)' tag: 'v14.06a-rc1' (+0 changes) commit ref: 9d096987205609053a9a656ebd72972ea92eff17)
+BusAttachment started.
+   0.141 ****** ERROR NETWORK external          ...mon/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Wed May 06 08:15:29 UTC 2015 by vedams - Git: alljoyn branch: '(detached from v14.06a-rc1)' tag: 'v14.06a-rc1' (+0 changes) commit ref: 9d096987205609053a9a656ebd72972ea92eff17)
+BusAttachment started.
+   0.248 ****** ERROR NETWORK external          ...mon/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.

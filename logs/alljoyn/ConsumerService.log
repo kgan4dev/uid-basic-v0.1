@@ -1,0 +1,46 @@
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.189 ****** ERROR NETWORK external          ...mon/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.192 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.192 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.192 DEBUG    Notification external         cpp/src/Transport.cc:332      | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.212 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.212 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.213 DEBUG    Notification external         cpp/src/Transport.cc:371      | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.214 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.215 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.216 DEBUG    Notification external         cpp/src/Transport.cc:416      | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.256 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.258 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.259 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.260 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.260 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.260 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.264 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.264 DEBUG    Notification external         cpp/src/Transport.cc:432      | successfully listens announcements.
+   0.264 DEBUG    Notification external         cpp/src/Transport.cc:441      | Started Receiver successfully
+Waiting for notifications.
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.331 ****** ERROR NETWORK external          ...mon/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.334 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.334 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.335 DEBUG    Notification external         cpp/src/Transport.cc:332      | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.360 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.362 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.363 DEBUG    Notification external         cpp/src/Transport.cc:371      | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.375 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.377 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.377 DEBUG    Notification external         cpp/src/Transport.cc:416      | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.379 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.379 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.379 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.380 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.380 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.381 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.382 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.382 DEBUG    Notification external         cpp/src/Transport.cc:432      | successfully listens announcements.
+   0.383 DEBUG    Notification external         cpp/src/Transport.cc:441      | Started Receiver successfully
+Waiting for notifications.
