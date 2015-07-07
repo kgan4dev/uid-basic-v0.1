@@ -175,7 +175,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setDeviceName("My device name", "en");
+    status = propStore->setDeviceName("My vedams device", "en");
     if (status != ER_OK) {
         return status;
     }

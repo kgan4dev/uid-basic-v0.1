@@ -1,0 +1,455 @@
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Wed May 06 08:15:29 UTC 2015 by vedams - Git: alljoyn branch: '(detached from v14.06a-rc1)' tag: 'v14.06a-rc1' (+0 changes) commit ref: 9d096987205609053a9a656ebd72972ea92eff17)
+BusAttachment started.
+   1.143 ****** ERROR NETWORK external          ...mon/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+   1.212 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   1.212 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   1.212 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   1.212 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Onboarding'")
+1084.295 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:206 | InternalAnnounceHandler::AnnounceSignalHandler
+1084.295 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:208 | received signal interface=org.alljoyn.About method=Announce
+1084.315 ****** ERROR NETWORK iodisp            ...mon/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 62): 107 - Transport endpoint is not connected: ER_OS_ERROR
+1084.321 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[0]=<uint16>1</uint16>
+1084.321 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[1]=<uint16>900</uint16>
+1084.321 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[2]=<array type_sig="(oas)">
+  <struct>
+    <object_path>/About</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.About</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/About/DeviceIcon</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Icon</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/Config</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Config</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/Onboarding</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Onboarding</string>
+    </array>
+  </struct>
+</array>
+1084.321 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[3]=<array type_sig="{sv}">
+  <dict_entry>
+    <string>DeviceId</string>
+    <variant signature="s">
+      <string>dd2642f492954e9da7e3a82ef87db797</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>DeviceName</string>
+    <variant signature="s">
+      <string>My device name</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>AppId</string>
+    <variant signature="ay">
+      <array type="byte">
+        194 135 168 116 164 195 76 214 175 128 15 46 131 45 114 234 
+      </array>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>AppName</string>
+    <variant signature="s">
+      <string>OnboardingServiceApp</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>DefaultLanguage</string>
+    <variant signature="s">
+      <string>en</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>Manufacturer</string>
+    <variant signature="s">
+      <string>Company</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>ModelNumber</string>
+    <variant signature="s">
+      <string>Wxfy388i</string>
+    </variant>
+  </dict_entry>
+</array>
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :FWPAXBP5.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+key=/Config value=org.alljoyn.Config
+key=/Onboarding value=org.alljoyn.Onboarding
+Announcedata
+Key name=AppId value:C287A874A4C34CD6AF80F2E832D72EA
+Key name=AppName value=OnboardingServiceApp
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=dd2642f492954e9da7e3a82ef87db797
+Key name=DeviceName value=My device name
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+JoinSessionCB(:FWPAXBP5.2) succeeded with id1134577065
+Calling SessionJoiner Callback
+1084.445 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  .../cpp/src/AboutClient.cc:32 | AboutClient::AboutClient
+
+:FWPAXBP5.2 AboutClient ObjectDescriptions
+-----------------------------------
+1084.445 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  .../cpp/src/AboutClient.cc:73 | AboutClient::GetObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+key=/Config value=org.alljoyn.Config
+key=/Onboarding value=org.alljoyn.Onboarding
+
+:FWPAXBP5.2 AboutClient AboutData
+-----------------------------------
+1084.449 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  ...cpp/src/AboutClient.cc:142 | AboutClient::GetAboutData
+Key name=AJSoftwareVersion value=v14.06.00a
+Key name=AppId value=C287A874A4C34CD6AF800F2E832D72EA
+Key name=AppName value=OnboardingServiceApp
+Key name=DateOfManufacture value=10/1/2199
+Key name=DefaultLanguage value=en
+Key name=Description value=This is an Alljoyn Application
+Key name=DeviceId value=dd2642f492954e9da7e3a82ef87db797
+Key name=DeviceName value=My device name
+Key name=HardwareVersion value=355.499. b
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+Key name=SoftwareVersion value=12.20.44 build 44454
+Key name=SupportUrl value=http://www.alljoyn.org
+Key name=SupportedLanguages values: en es fr 
+
+:FWPAXBP5.2 AboutClient GetVersion
+-----------------------------------
+1084.465 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  ...cpp/src/AboutClient.cc:204 | AboutClient::GetVersion
+Version=1
+1084.476 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp .../AboutIconClient.cc:37 | AboutIcontClient::AboutIconClient
+
+:FWPAXBP5.2 AboutIcontClient GetUrl
+-----------------------------------
+1084.477 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp .../AboutIconClient.cc:76 | AboutIcontClient::GetUrl
+url=
+
+:FWPAXBP5.2 AboutIcontClient GetContent
+-----------------------------------
+1084.517 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:113 | AboutIcontClient::GetContent
+Content size=134
+Content :	89504E470D0A1A0A
+		0000000D49484452
+		0000000A0000000A
+		0802000000025058
+		EA0000000467414D
+		410000AFC837058A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F013760
+		62C00B46AA344080
+		0100067C01B7ED4B
+		532C000000004945
+		4E44AE426082
+
+:FWPAXBP5.2 AboutIcontClient GetVersion
+-----------------------------------
+1084.565 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:193 | AboutIcontClient::GetVersion
+Version=1
+
+:FWPAXBP5.2 AboutIcontClient GetMimeType
+-----------------------------------
+1084.571 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:239 | AboutIcontClient::GetMimeType
+Mimetype=image/png
+
+:FWPAXBP5.2 AboutIcontClient GetSize
+-----------------------------------
+1084.582 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:216 | AboutIcontClient::GetSize
+Size=134
+1084.590 TRACE    Config      lepDisp           ...cpp/src/ConfigClient.cc:31 | In ConfigClient Constructor
+
+:FWPAXBP5.2 ConfigClient GetVersion
+-----------------------------------
+1084.590 TRACE    Config      lepDisp           ...pp/src/ConfigClient.cc:282 | In ConfigClient GetVersion
+RequestCredentials for authenticating :FWPAXBP5.2 using mechanism ALLJOYN_ECDHE_PSK
+RequestCredentials setPasscode to 000000
+Authentication with ALLJOYN_ECDHE_PSK was successful
+Success GetVersion. Version=1
+
+:FWPAXBP5.2 ConfigClient GetConfigurations
+-----------------------------------
+1085.305 TRACE    Config      lepDisp           ...pp/src/ConfigClient.cc:134 | In ConfigClient GetConfigurations
+Key name=DefaultLanguage value=en
+Key name=DeviceName value=My device name
+1085.352 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:40 | In OnboardingClient Constructor
+1085.353 TRACE    Onboarding  lepDisp           ...dleOnboardingSignals.cc:26 | ConnectionResultHandler::HandleOnboardingSignals
+
+:FWPAXBP5.2 OnboardingClient GetVersion
+-----------------------------------
+1085.353 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:255 | In OnboardingClient GetVersion
+Version=1
+
+:FWPAXBP5.2 OnboardingClient GetState
+-----------------------------------
+1085.468 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:281 | In OnboardingClient GetState
+GetState=0
+
+:FWPAXBP5.2 OnboardingClient GetLastError
+-----------------------------------
+1085.487 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:308 | In OnboardingClient GetLastError
+OBLastError code=0 message= 
+
+:FWPAXBP5.2 OnboardingClient GetScanInfo
+-----------------------------------
+1085.505 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:83 | In OnboardingClient GetScanInfo
+1085.521 HL_DBG   Onboarding  lepDisp           ...rc/OnboardingClient.cc:111 | GetScanInfo errorName: org.alljoyn.Bus.ErStatus errorMessage: ER_FAIL
+Call to GetScanInfo failed ER_BUS_REPLY_IS_ERROR_MESSAGE
+
+:FWPAXBP5.2 OnboardingClient ConfigureWiFi
+-----------------------------------
+1085.521 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:149 | In OnboardingClient ConfigureWiFi
+Call to ConfigureWiFi succeeded 
+1085.573 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:205 | In OnboardingClient ConnectTo
+Call to ConnectTo succeeded 
+1085.574 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:230 | In OnboardingClient OffboardFrom
+Call to OffboardFrom succeeded 
+Leaving session id = 1134577065 with :FWPAXBP5.2 status: ER_OK
+1085.632 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:72 | In OnboardingClient Destructor
+1316.818 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:206 | InternalAnnounceHandler::AnnounceSignalHandler
+1316.818 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:208 | received signal interface=org.alljoyn.About method=Announce
+1316.818 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[0]=<uint16>1</uint16>
+1316.818 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[1]=<uint16>900</uint16>
+1316.819 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[2]=<array type_sig="(oas)">
+  <struct>
+    <object_path>/About</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.About</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/About/DeviceIcon</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Icon</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/Config</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Config</string>
+    </array>
+  </struct>
+  <struct>
+    <object_path>/Onboarding</object_path>
+    <array type_sig="s">
+      <string>org.alljoyn.Onboarding</string>
+    </array>
+  </struct>
+</array>
+1316.819 DEBUG    ALLJOYN_ABOUT_ANNOUNCE_HANDLER lepDisp ...nceHandler.cc:221 | args[3]=<array type_sig="{sv}">
+  <dict_entry>
+    <string>DeviceId</string>
+    <variant signature="s">
+      <string>dd2642f492954e9da7e3a82ef87db797</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>DeviceName</string>
+    <variant signature="s">
+      <string>My device name</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>AppId</string>
+    <variant signature="ay">
+      <array type="byte">
+        74 197 25 137 246 65 72 252 162 175 203 249 231 234 106 6 
+      </array>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>AppName</string>
+    <variant signature="s">
+      <string>OnboardingServiceApp</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>DefaultLanguage</string>
+    <variant signature="s">
+      <string>en</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>Manufacturer</string>
+    <variant signature="s">
+      <string>Company</string>
+    </variant>
+  </dict_entry>
+  <dict_entry>
+    <string>ModelNumber</string>
+    <variant signature="s">
+      <string>Wxfy388i</string>
+    </variant>
+  </dict_entry>
+</array>
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :FzBH-3ca.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+key=/Config value=org.alljoyn.Config
+key=/Onboarding value=org.alljoyn.Onboarding
+Announcedata
+Key name=AppId value:4AC51989F64148FCA2AFCBF9E7EA6A6
+Key name=AppName value=OnboardingServiceApp
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=dd2642f492954e9da7e3a82ef87db797
+Key name=DeviceName value=My device name
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+JoinSessionCB(:FzBH-3ca.2) succeeded with id2200287377
+Calling SessionJoiner Callback
+1317.031 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  .../cpp/src/AboutClient.cc:32 | AboutClient::AboutClient
+
+:FzBH-3ca.2 AboutClient ObjectDescriptions
+-----------------------------------
+1317.031 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  .../cpp/src/AboutClient.cc:73 | AboutClient::GetObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+key=/Config value=org.alljoyn.Config
+key=/Onboarding value=org.alljoyn.Onboarding
+
+:FzBH-3ca.2 AboutClient AboutData
+-----------------------------------
+1317.081 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  ...cpp/src/AboutClient.cc:142 | AboutClient::GetAboutData
+Key name=AJSoftwareVersion value=v14.06.00a
+Key name=AppId value=4AC51989F64148FCA2AFCBF9E7EA6A06
+Key name=AppName value=OnboardingServiceApp
+Key name=DateOfManufacture value=10/1/2199
+Key name=DefaultLanguage value=en
+Key name=Description value=This is an Alljoyn Application
+Key name=DeviceId value=dd2642f492954e9da7e3a82ef87db797
+Key name=DeviceName value=My device name
+Key name=HardwareVersion value=355.499. b
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+Key name=SoftwareVersion value=12.20.44 build 44454
+Key name=SupportUrl value=http://www.alljoyn.org
+Key name=SupportedLanguages values: en es fr 
+
+:FzBH-3ca.2 AboutClient GetVersion
+-----------------------------------
+1317.112 TRACE    ALLJOYN_ABOUT_CLIENT lepDisp  ...cpp/src/AboutClient.cc:204 | AboutClient::GetVersion
+Version=1
+1317.153 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp .../AboutIconClient.cc:37 | AboutIcontClient::AboutIconClient
+
+:FzBH-3ca.2 AboutIcontClient GetUrl
+-----------------------------------
+1317.153 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp .../AboutIconClient.cc:76 | AboutIcontClient::GetUrl
+url=
+
+:FzBH-3ca.2 AboutIcontClient GetContent
+-----------------------------------
+1317.184 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:113 | AboutIcontClient::GetContent
+Content size=134
+Content :	89504E470D0A1A0A
+		0000000D49484452
+		0000000A0000000A
+		0802000000025058
+		EA0000000467414D
+		410000AFC837058A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F013760
+		62C00B46AA344080
+		0100067C01B7ED4B
+		532C000000004945
+		4E44AE426082
+
+:FzBH-3ca.2 AboutIcontClient GetVersion
+-----------------------------------
+1317.189 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:193 | AboutIcontClient::GetVersion
+Version=1
+
+:FzBH-3ca.2 AboutIcontClient GetMimeType
+-----------------------------------
+1317.195 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:239 | AboutIcontClient::GetMimeType
+Mimetype=image/png
+
+:FzBH-3ca.2 AboutIcontClient GetSize
+-----------------------------------
+1317.250 TRACE    ALLJOYN_ABOUT_ICON_CLIENT lepDisp ...AboutIconClient.cc:216 | AboutIcontClient::GetSize
+Size=134
+1317.255 TRACE    Config      lepDisp           ...cpp/src/ConfigClient.cc:31 | In ConfigClient Constructor
+
+:FzBH-3ca.2 ConfigClient GetVersion
+-----------------------------------
+1317.255 TRACE    Config      lepDisp           ...pp/src/ConfigClient.cc:282 | In ConfigClient GetVersion
+Success GetVersion. Version=1
+
+:FzBH-3ca.2 ConfigClient GetConfigurations
+-----------------------------------
+1317.302 TRACE    Config      lepDisp           ...pp/src/ConfigClient.cc:134 | In ConfigClient GetConfigurations
+Key name=DefaultLanguage value=en
+Key name=DeviceName value=My device name
+1317.319 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:40 | In OnboardingClient Constructor
+
+:FzBH-3ca.2 OnboardingClient GetVersion
+-----------------------------------
+1317.319 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:255 | In OnboardingClient GetVersion
+Version=1
+
+:FzBH-3ca.2 OnboardingClient GetState
+-----------------------------------
+1317.324 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:281 | In OnboardingClient GetState
+GetState=0
+
+:FzBH-3ca.2 OnboardingClient GetLastError
+-----------------------------------
+1317.352 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:308 | In OnboardingClient GetLastError
+OBLastError code=0 message= 
+
+:FzBH-3ca.2 OnboardingClient GetScanInfo
+-----------------------------------
+1317.417 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:83 | In OnboardingClient GetScanInfo
+1317.452 HL_DBG   Onboarding  lepDisp           ...rc/OnboardingClient.cc:111 | GetScanInfo errorName: org.alljoyn.Bus.ErStatus errorMessage: ER_FAIL
+Call to GetScanInfo failed ER_BUS_REPLY_IS_ERROR_MESSAGE
+
+:FzBH-3ca.2 OnboardingClient ConfigureWiFi
+-----------------------------------
+1317.453 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:149 | In OnboardingClient ConfigureWiFi
+Call to ConfigureWiFi succeeded 
+1317.493 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:205 | In OnboardingClient ConnectTo
+Call to ConnectTo succeeded 
+1317.493 TRACE    Onboarding  lepDisp           ...rc/OnboardingClient.cc:230 | In OnboardingClient OffboardFrom
+Call to OffboardFrom succeeded 
+Leaving session id = 2200287377 with :FzBH-3ca.2 status: ER_OK
+1317.552 TRACE    Onboarding  lepDisp           ...src/OnboardingClient.cc:72 | In OnboardingClient Destructor
+1317.552 ****** ERROR ALLJOYN_OBJ lepDisp       .../router/AllJoynObj.cc:3741 | Cannot find bus-to-bus endpoint :FzBH-3ca.18: ER_BUS_NO_ENDPOINT

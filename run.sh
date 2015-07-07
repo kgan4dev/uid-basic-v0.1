@@ -17,7 +17,7 @@ fi
 
 # Running Alljoyn component services
 if [ $arg == 'start' ]; then
-	export LD_LIBRARY_PATH=$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/cpp/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/lib:$LD_LIBRARY_PATH
+	export LD_LIBRARY_PATH=$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/cpp/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/config/lib:$$LD_LIBRARY_PATH
 
 	printf "Starting Alljoyn component services . . . \n"
 
@@ -39,12 +39,21 @@ if [ $arg == 'start' ]; then
                 printf "Done\n"
 	fi
 
+	printf "\nOnboarding Client service	\n"
+	if [ ! -z "$(ps | grep "OnboardingClientSample" | awk '{print $1}')" ];then
+		printf "Service already running. . . \n"
+	else
+		printf "Service Starting. . .                   "
+		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/bin/OnboardingClient >> $path/logs/alljoyn/OnboardingClient.log 2>&1 &
+                printf "Done\n"
+	fi
+
 #	printf "Notification Producer service	"
 #	$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/bin/ProducerService >> $path/logs/alljoyn/ProducerService.log  2>&1 &
 #	printf "Done\n\n"
 	printf "\nAlljoyn component services started Successfully.!\n"
 elif [ $arg == 'restart' ];then
-	export LD_LIBRARY_PATH=$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/cpp/lib:$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/lib:$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/lib:$LD_LIBRARY_PATH
+	export LD_LIBRARY_PATH=$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/cpp/lib:$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/lib:$path/components/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/config/lib:$LD_LIBRARY_PATH
 
 	printf "Restarting Alljoyn component services . . . \n"
 
@@ -76,6 +85,20 @@ elif [ $arg == 'restart' ];then
                 printf "Done\n"
 	fi
 
+	printf "\nOnboarding Client service	\n"
+	if [ ! -z "$(ps | grep "OnboardingClient" | awk '{print $1}')" ];then
+		printf "Service Stopping. . .			"
+		kill -9 $(ps | grep "OnboardingClient" | awk '{print $1}')
+		printf "Done\n"
+		printf "Service Starting. . . 			"
+		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/bin/OnboardingClient >> $path/logs/alljoyn/OnboardingClient.log 2>&1 &
+		printf "Done\n"
+	else
+		printf "Service Starting. . .                   "
+		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/bin/OnboardingClient >> $path/logs/alljoyn/OnboardingClient.log 2>&1 &
+                printf "Done\n"
+	fi
+
 #	printf "Notification Producer service . . .	"
 #	$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/bin/ProducerService >> $path/logs/alljoyn/ProducerService.log  2>&1 &
 #	printf "Done\n\n"
@@ -90,6 +113,15 @@ elif [ $arg == 'stop' ]; then
 	else
 		printf "Service stopping. . .			"
 		kill -9 $(ps | grep "AboutClient" | awk '{print $1}')
+		printf "Done\n"
+	fi
+
+	printf "\nOnboarding Client service\n"
+	if [ -z $(ps | grep "OnboardingClient" | awk '{print $1}') ];then
+		printf "Service found not running . . .\n"
+	else
+		printf "Service stopping. . .			"
+		kill -9 $(ps | grep "OnboardingClient" | awk '{print $1}')
 		printf "Done\n"
 	fi
 
@@ -108,6 +140,13 @@ elif [ $arg == 'stop' ]; then
 elif [ $arg == "status" ];then
         printf "\nAbout Client service\n"
         if [ -z $(ps | grep "AboutClient" | awk '{print $1}') ];then
+                printf "Service found not running . . .\n"
+        else
+                printf "Service is running . . .\n"
+        fi
+
+        printf "\nOnboarding Client service\n"
+        if [ -z $(ps | grep "OnboardingClient" | awk '{print $1}') ];then
                 printf "Service found not running . . .\n"
         else
                 printf "Service is running . . .\n"

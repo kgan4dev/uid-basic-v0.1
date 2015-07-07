@@ -14,13 +14,21 @@ fi
 printf "Building started for AllJoyn component services.\n"
 cd $path/core/alljoyn/core/alljoyn/
 if [ $TARGET_CPU == 'x86' ]; then
-	scons WS=off BINDINGS=cpp SERVICES="about,notification"
+	scons WS=off BINDINGS=cpp SERVICES="about,notification,onboarding"
 elif [ $TARGET_CPU == 'arm' ]; then
-	scons WS=off BINDINGS=cpp CPU=arm OE_BASE=/usr SERVICES="about,notification"
+	scons WS=off BINDINGS=cpp CPU=arm OE_BASE=/usr SERVICES="about,notification,onboarding"
 fi
 
 printf "\nChecking Alljoyn About Service . . .			"
 if [ -f $path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/bin/AboutClient ]; then
+	printf "Build successful.!\n"
+else
+	printf "\nSomething went wrong.!\n"
+	exit
+fi
+
+printf "\nChecking Alljoyn Onboarding Client Service . . .	"
+if [ -f $path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/bin/OnboardingClient ]; then
 	printf "Build successful.!\n"
 else
 	printf "\nSomething went wrong.!\n"
