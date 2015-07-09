@@ -33,7 +33,7 @@ if '' == env.subst('$OE_BASE'):
       Exit(1)
 
 # Use OpenEmbedded tools
-gcc_prefix  = '$OE_BASE/bin/arm-angstrom-linux-gnueabi-'
+gcc_prefix  = '$OE_BASE/bin/arm-linux-gnueabihf-'
 env['CC']   = gcc_prefix + 'gcc'
 env['CXX']  = gcc_prefix + 'g++'
 env['LINK'] = gcc_prefix + 'gcc'
