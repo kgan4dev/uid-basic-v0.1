@@ -17,7 +17,7 @@ import os
 
 srcs = env.Glob('*.cc')
 objs = env.Object(srcs)
-env.Prepend(LIBS = ['curl','xml2'])
+env.Prepend(LIBS = ['mysqlclient'])
 
 env.VariantDir('AppCommon', '$APP_COMMON_DIR/cpp/samples_common/', duplicate = 0)
 cobjs = env.SConscript('AppCommon/SConscript', {'env': env})
