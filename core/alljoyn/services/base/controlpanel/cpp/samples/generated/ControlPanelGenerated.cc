@@ -205,7 +205,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceLightAction->setHints(myDeviceLightActionHintsVec);
 
-    myDeviceLightConfirm = new MyDeviceLightConfirm("LightConfirm", NULL);
+    myDeviceLightConfirm = new MyDeviceLightConfirm("RedLightConfirm", NULL);
     CHECK(myDeviceLightAction->addChildDialog(myDeviceLightConfirm));
 
     myDeviceLightConfirm->setEnabled(true);
@@ -241,7 +241,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceLightConfirmLabelAction2Vec.push_back(UNICODE_NO);
     myDeviceLightConfirm->setLabelsAction2(myDeviceLightConfirmLabelAction2Vec);
 
-    myDeviceNextLightAction = new ActionWithDialog("nextlightAction", myDeviceRootContainer);
+    myDeviceNextLightAction = new ActionWithDialog("nextRedLightAction", myDeviceRootContainer);
     CHECK(myDeviceRootContainer->addChildWidget(myDeviceNextLightAction));
 
     myDeviceNextLightAction->setEnabled(true);
@@ -258,7 +258,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceNextLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceNextLightAction->setHints(myDeviceNextLightActionHintsVec);
 
-    myDeviceNextLightConfirm = new MyDeviceNextLightConfirm("LightConfirm", NULL);
+    myDeviceNextLightConfirm = new MyDeviceNextLightConfirm("NextRedLightConfirm", NULL);
     CHECK(myDeviceNextLightAction->addChildDialog(myDeviceNextLightConfirm));
 
     myDeviceNextLightConfirm->setEnabled(true);
@@ -311,7 +311,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceYellowLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceYellowLightAction->setHints(myDeviceYellowLightActionHintsVec);
 
-    myDeviceYellowLightConfirm = new MyDeviceYellowLightConfirm("LightConfirm", NULL);
+    myDeviceYellowLightConfirm = new MyDeviceYellowLightConfirm("YellowLightConfirm", NULL);
     CHECK(myDeviceYellowLightAction->addChildDialog(myDeviceYellowLightConfirm));
 
     myDeviceYellowLightConfirm->setEnabled(true);
@@ -364,7 +364,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceNextYellowLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceNextYellowLightAction->setHints(myDeviceNextYellowLightActionHintsVec);
 
-    myDeviceNextYellowLightConfirm = new MyDeviceNextYellowLightConfirm("LightConfirm", NULL);
+    myDeviceNextYellowLightConfirm = new MyDeviceNextYellowLightConfirm("NextYellowLightConfirm", NULL);
     CHECK(myDeviceNextYellowLightAction->addChildDialog(myDeviceNextYellowLightConfirm));
 
     myDeviceNextYellowLightConfirm->setEnabled(true);
@@ -417,7 +417,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceGreenLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceGreenLightAction->setHints(myDeviceGreenLightActionHintsVec);
 
-    myDeviceGreenLightConfirm = new MyDeviceGreenLightConfirm("LightConfirm", NULL);
+    myDeviceGreenLightConfirm = new MyDeviceGreenLightConfirm("GreenLightConfirm", NULL);
     CHECK(myDeviceGreenLightAction->addChildDialog(myDeviceGreenLightConfirm));
 
     myDeviceGreenLightConfirm->setEnabled(true);
@@ -470,7 +470,7 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceNextGreenLightActionHintsVec.push_back(ACTIONBUTTON);
     myDeviceNextGreenLightAction->setHints(myDeviceNextLightActionHintsVec);
 
-    myDeviceNextGreenLightConfirm = new MyDeviceNextGreenLightConfirm("LightConfirm", NULL);
+    myDeviceNextGreenLightConfirm = new MyDeviceNextGreenLightConfirm("NextGreenLightConfirm", NULL);
     CHECK(myDeviceNextGreenLightAction->addChildDialog(myDeviceNextGreenLightConfirm));
 
     myDeviceNextGreenLightConfirm->setEnabled(true);
