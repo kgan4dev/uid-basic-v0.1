@@ -62,6 +62,26 @@ class ControlPanelGenerated {
     static ajn::services::MyDeviceAreYouSure* myDeviceAreYouSure;
 
 
+    static ajn::services::ActionWithDialog* myDeviceNextLightAction;
+
+    static ajn::services::MyDeviceNextLightConfirm* myDeviceNextLightConfirm;
+
+    static ajn::services::ActionWithDialog* myDeviceYellowLightAction;
+
+    static ajn::services::MyDeviceYellowLightConfirm* myDeviceYellowLightConfirm;
+
+    static ajn::services::ActionWithDialog* myDeviceNextYellowLightAction;
+
+    static ajn::services::MyDeviceNextYellowLightConfirm* myDeviceNextYellowLightConfirm;
+
+    static ajn::services::ActionWithDialog* myDeviceGreenLightAction;
+
+    static ajn::services::MyDeviceGreenLightConfirm* myDeviceGreenLightConfirm;
+
+    static ajn::services::ActionWithDialog* myDeviceNextGreenLightAction;
+
+    static ajn::services::MyDeviceNextGreenLightConfirm* myDeviceNextGreenLightConfirm;
+
 };
 
 #endif /* CONTROLPANELGENERATED_H_ */

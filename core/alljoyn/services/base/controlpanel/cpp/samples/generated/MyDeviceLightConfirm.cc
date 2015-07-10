@@ -33,7 +33,7 @@ MyDeviceLightConfirm::~MyDeviceLightConfirm()
 
 bool MyDeviceLightConfirm::executeAction1CallBack()
 {
-    AJ_Printf("Execute Action1 was called\n");
+    AJ_Printf("LED1 ON  : Execute Action1 was called\n");
 
     //by default return success
     return true;
@@ -41,13 +41,183 @@ bool MyDeviceLightConfirm::executeAction1CallBack()
 
 bool MyDeviceLightConfirm::executeAction2CallBack()
 {
-    AJ_Printf("Execute Action2 was called\n");
+    AJ_Printf("LED1 OFF : Execute Action2 was called\n");
 
     //by default return success
     return true;
 }
 
 bool MyDeviceLightConfirm::executeAction3CallBack()
+{
+    AJ_Printf("Execute Action3 was called\n");
+
+    //by default return success
+    return true;
+}
+
+MyDeviceNextLightConfirm::MyDeviceNextLightConfirm(qcc::String name, Widget* rootWidget) : Dialog(name, rootWidget)
+{
+
+}
+
+MyDeviceNextLightConfirm::~MyDeviceNextLightConfirm()
+{
+
+}
+
+bool MyDeviceNextLightConfirm::executeAction1CallBack()
+{
+    AJ_Printf("LED2 ON  : Execute Action1 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextLightConfirm::executeAction2CallBack()
+{
+    AJ_Printf("LED2 OFF : Execute Action2 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextLightConfirm::executeAction3CallBack()
+{
+    AJ_Printf("Execute Action3 was called\n");
+
+    //by default return success
+    return true;
+}
+
+MyDeviceYellowLightConfirm::MyDeviceYellowLightConfirm(qcc::String name, Widget* rootWidget) : Dialog(name, rootWidget)
+{
+
+}
+
+MyDeviceYellowLightConfirm::~MyDeviceYellowLightConfirm()
+{
+
+}
+
+bool MyDeviceYellowLightConfirm::executeAction1CallBack()
+{
+    AJ_Printf("LED3 ON  : Execute Action1 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceYellowLightConfirm::executeAction2CallBack()
+{
+    AJ_Printf("LED3 OFF : Execute Action2 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceYellowLightConfirm::executeAction3CallBack()
+{
+    AJ_Printf("Execute Action3 was called\n");
+
+    //by default return success
+    return true;
+}
+
+MyDeviceNextYellowLightConfirm::MyDeviceNextYellowLightConfirm(qcc::String name, Widget* rootWidget) : Dialog(name, rootWidget)
+{
+
+}
+
+MyDeviceNextYellowLightConfirm::~MyDeviceNextYellowLightConfirm()
+{
+
+}
+
+bool MyDeviceNextYellowLightConfirm::executeAction1CallBack()
+{
+    AJ_Printf("LED4 ON  : Execute Action1 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextYellowLightConfirm::executeAction2CallBack()
+{
+    AJ_Printf("LED4 OFF : Execute Action2 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextYellowLightConfirm::executeAction3CallBack()
+{
+    AJ_Printf("Execute Action3 was called\n");
+
+    //by default return success
+    return true;
+}
+
+MyDeviceGreenLightConfirm::MyDeviceGreenLightConfirm(qcc::String name, Widget* rootWidget) : Dialog(name, rootWidget)
+{
+
+}
+
+MyDeviceGreenLightConfirm::~MyDeviceGreenLightConfirm()
+{
+
+}
+
+bool MyDeviceGreenLightConfirm::executeAction1CallBack()
+{
+    AJ_Printf("LED5 ON  : Execute Action1 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceGreenLightConfirm::executeAction2CallBack()
+{
+    AJ_Printf("LED5 OFF : Execute Action2 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceGreenLightConfirm::executeAction3CallBack()
+{
+    AJ_Printf("Execute Action3 was called\n");
+
+    //by default return success
+    return true;
+}
+
+MyDeviceNextGreenLightConfirm::MyDeviceNextGreenLightConfirm(qcc::String name, Widget* rootWidget) : Dialog(name, rootWidget)
+{
+
+}
+
+MyDeviceNextGreenLightConfirm::~MyDeviceNextGreenLightConfirm()
+{
+
+}
+
+bool MyDeviceNextGreenLightConfirm::executeAction1CallBack()
+{
+    AJ_Printf("LED6 ON  : Execute Action1 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextGreenLightConfirm::executeAction2CallBack()
+{
+    AJ_Printf("LED6 OFF : Execute Action2 was called\n");
+
+    //by default return success
+    return true;
+}
+
+bool MyDeviceNextGreenLightConfirm::executeAction3CallBack()
 {
     AJ_Printf("Execute Action3 was called\n");
 

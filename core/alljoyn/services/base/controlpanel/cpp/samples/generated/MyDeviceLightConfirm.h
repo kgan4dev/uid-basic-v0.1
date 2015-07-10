@@ -34,6 +34,57 @@ class MyDeviceLightConfirm : public ajn::services::Dialog {
     bool executeAction2CallBack();
     bool executeAction3CallBack();
 };
+
+class MyDeviceNextLightConfirm : public ajn::services::Dialog {
+  public:
+    MyDeviceNextLightConfirm(qcc::String name, Widget* rootWidget);
+    virtual ~MyDeviceNextLightConfirm();
+
+    bool executeAction1CallBack();
+    bool executeAction2CallBack();
+    bool executeAction3CallBack();
+};
+
+class MyDeviceYellowLightConfirm : public ajn::services::Dialog {
+  public:
+    MyDeviceYellowLightConfirm(qcc::String name, Widget* rootWidget);
+    virtual ~MyDeviceYellowLightConfirm();
+
+    bool executeAction1CallBack();
+    bool executeAction2CallBack();
+    bool executeAction3CallBack();
+};
+
+class MyDeviceNextYellowLightConfirm : public ajn::services::Dialog {
+  public:
+    MyDeviceNextYellowLightConfirm(qcc::String name, Widget* rootWidget);
+    virtual ~MyDeviceNextYellowLightConfirm();
+
+    bool executeAction1CallBack();
+    bool executeAction2CallBack();
+    bool executeAction3CallBack();
+};
+
+class MyDeviceGreenLightConfirm : public ajn::services::Dialog {
+  public:
+    MyDeviceGreenLightConfirm(qcc::String name, Widget* rootWidget);
+    virtual ~MyDeviceGreenLightConfirm();
+
+    bool executeAction1CallBack();
+    bool executeAction2CallBack();
+    bool executeAction3CallBack();
+};
+
+class MyDeviceNextGreenLightConfirm : public ajn::services::Dialog {
+  public:
+    MyDeviceNextGreenLightConfirm(qcc::String name, Widget* rootWidget);
+    virtual ~MyDeviceNextGreenLightConfirm();
+
+    bool executeAction1CallBack();
+    bool executeAction2CallBack();
+    bool executeAction3CallBack();
+};
+
 } //namespace services
 } //namespace ajn
 
