@@ -19,8 +19,6 @@
 #include <alljoyn/controlpanel/Label.h>
 #include "ControlPanelProvided.h"
 
-
-
 using namespace ajn;
 using namespace services;
 

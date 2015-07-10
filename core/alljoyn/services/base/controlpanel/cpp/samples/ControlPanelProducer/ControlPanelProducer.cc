@@ -29,6 +29,8 @@
 #include <alljoyn/services_common/LogModulesNames.h>
 #include <alljoyn/services_common/GuidUtil.h>
 
+UIDAddons::UIDBerryClip *myUIDBerryClip = new UIDBerryClip();
+
 #define SERVICE_PORT 900
 
 using namespace ajn;
@@ -201,28 +203,50 @@ start:
 
     getline(std::cin, input);
     while (s_interrupt == false && s_restart == false && !std::cin.eof()) {
-        controlPanelServiceObjectPath = input.length() ? input.c_str() : defaultControlPanelServiceObjectPath;
 
-        NotificationMessageType messageType = INFO;
-        NotificationText textToSend("en", "Sending CPS ObjectPath");
-        std::vector<NotificationText> vecMessages;
-        vecMessages.push_back(textToSend);
-        Notification notification(messageType, vecMessages);
-        notification.setControlPanelServiceObjectPath(controlPanelServiceObjectPath.c_str());
+	if(myUIDBerryClip->Status(SWITCH)) {
 
-        status = sender->send(notification, 7200);
-        if (status != ER_OK) {
-            std::cout << "Notification was not sent successfully" << std::endl;
-        } else {
-            std::cout << "Notification sent successfully" << std::endl;
-        }
+		while(myUIDBerryClip->Status(SWITCH));
 
-        std::cout << "Enter in the ControlPanelService object path or press 'enter' to use default:" << std::endl;
-        getline(std::cin, input);
+        	NotificationMessageType messageType = INFO;
+	        NotificationText textToSend("en", "Transition event generated from Berry Clip button");
+        	std::vector<NotificationText> vecMessages;
+	        vecMessages.push_back(textToSend);
+        	Notification notification(messageType, vecMessages);
+	        notification.setControlPanelServiceObjectPath(controlPanelServiceObjectPath.c_str());
+
+        	status = sender->send(notification, 7200);
+	        if (status != ER_OK) {
+        	    std::cout << "Notification was not sent successfully" << std::endl;
+	        } else {
+        	    std::cout << "Notification sent successfully" << std::endl;
+	        }
+	}	
+
+//        controlPanelServiceObjectPath = input.length() ? input.c_str() : defaultControlPanelServiceObjectPath;
+
+//        NotificationMessageType messageType = INFO;
+//        NotificationText textToSend("en", "Sending CPS ObjectPath");
+//        std::vector<NotificationText> vecMessages;
+//        vecMessages.push_back(textToSend);
+//        Notification notification(messageType, vecMessages);
+//        notification.setControlPanelServiceObjectPath(controlPanelServiceObjectPath.c_str());
+
+//        status = sender->send(notification, 7200);
+//        if (status != ER_OK) {
+//            std::cout << "Notification was not sent successfully" << std::endl;
+//        } else {
+//            std::cout << "Notification sent successfully" << std::endl;
+//        }
+
+//        std::cout << "Enter in the ControlPanelService object path or press 'enter' to use default:" << std::endl;
+//        getline(std::cin, input);
     }
 
     std::cout << "Cleaning up in 10 seconds" << std::endl;
     sleep(10);
+
+    delete myUIDBerryClip;
 
     if (s_restart) {
         s_restart = false;

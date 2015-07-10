@@ -17,7 +17,6 @@
 #include "MyDeviceLightConfirm.h"
 #include "ControlPanelProvided.h"
 
-
 namespace ajn {
 namespace services {
 
@@ -34,7 +33,7 @@ MyDeviceLightConfirm::~MyDeviceLightConfirm()
 bool MyDeviceLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED1 ON  : Execute Action1 was called\n");
-
+    myUIDBerryClip->TurnOn(LED6);	
     //by default return success
     return true;
 }
@@ -42,7 +41,7 @@ bool MyDeviceLightConfirm::executeAction1CallBack()
 bool MyDeviceLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED1 OFF : Execute Action2 was called\n");
-
+    myUIDBerryClip->TurnOff(LED6);	
     //by default return success
     return true;
 }
@@ -68,6 +67,7 @@ MyDeviceNextLightConfirm::~MyDeviceNextLightConfirm()
 bool MyDeviceNextLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED2 ON  : Execute Action1 was called\n");
+    myUIDBerryClip->TurnOn(LED5);	
 
     //by default return success
     return true;
@@ -76,6 +76,7 @@ bool MyDeviceNextLightConfirm::executeAction1CallBack()
 bool MyDeviceNextLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED2 OFF : Execute Action2 was called\n");
+    myUIDBerryClip->TurnOff(LED5);	
 
     //by default return success
     return true;
@@ -102,6 +103,7 @@ MyDeviceYellowLightConfirm::~MyDeviceYellowLightConfirm()
 bool MyDeviceYellowLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED3 ON  : Execute Action1 was called\n");
+    myUIDBerryClip->TurnOn(LED4);	
 
     //by default return success
     return true;
@@ -110,6 +112,7 @@ bool MyDeviceYellowLightConfirm::executeAction1CallBack()
 bool MyDeviceYellowLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED3 OFF : Execute Action2 was called\n");
+    myUIDBerryClip->TurnOff(LED4);	
 
     //by default return success
     return true;
@@ -136,6 +139,7 @@ MyDeviceNextYellowLightConfirm::~MyDeviceNextYellowLightConfirm()
 bool MyDeviceNextYellowLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED4 ON  : Execute Action1 was called\n");
+    myUIDBerryClip->TurnOn(LED3);	
 
     //by default return success
     return true;
@@ -144,6 +148,7 @@ bool MyDeviceNextYellowLightConfirm::executeAction1CallBack()
 bool MyDeviceNextYellowLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED4 OFF : Execute Action2 was called\n");
+    myUIDBerryClip->TurnOff(LED3);	
 
     //by default return success
     return true;
@@ -170,6 +175,7 @@ MyDeviceGreenLightConfirm::~MyDeviceGreenLightConfirm()
 bool MyDeviceGreenLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED5 ON  : Execute Action1 was called\n");
+    myUIDBerryClip->TurnOn(LED2);	
 
     //by default return success
     return true;
@@ -178,6 +184,7 @@ bool MyDeviceGreenLightConfirm::executeAction1CallBack()
 bool MyDeviceGreenLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED5 OFF : Execute Action2 was called\n");
+    myUIDBerryClip->TurnOff(LED2);	
 
     //by default return success
     return true;
@@ -204,6 +211,7 @@ MyDeviceNextGreenLightConfirm::~MyDeviceNextGreenLightConfirm()
 bool MyDeviceNextGreenLightConfirm::executeAction1CallBack()
 {
     AJ_Printf("LED6 ON  : Execute Action1 was called\n");
+    myUIDBerryClip->TurnOn(LED1);	
 
     //by default return success
     return true;
@@ -212,6 +220,7 @@ bool MyDeviceNextGreenLightConfirm::executeAction1CallBack()
 bool MyDeviceNextGreenLightConfirm::executeAction2CallBack()
 {
     AJ_Printf("LED6 OFF : Execute Action2 was called\n");
+    myUIDBerryClip->TurnOff(LED1);	
 
     //by default return success
     return true;
