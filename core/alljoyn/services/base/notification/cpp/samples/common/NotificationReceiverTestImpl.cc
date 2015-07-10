@@ -22,6 +22,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include "UIDPlugin.h"
 
 using namespace ajn;
 using namespace services;
@@ -51,18 +52,36 @@ NotificationReceiverTestImpl::~NotificationReceiverTestImpl() {
 
 void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 
+    UIDUtils *myUIDUtils = new UIDUtils();
+
     qcc::String appName = notification.getAppName();
     // If applications list is empty or the name exists in the filter list then print the notification
     if ((m_Applications.size() == 0) || (find(m_Applications.begin(), m_Applications.end(), appName) !=  m_Applications.end())) {
         std::cout << "******************** Begin New Message Received ********************" << std::endl;
         std::cout << "Message Id: " << notification.getMessageId() << std::endl;	
+	myUIDUtils->setAJDeviceNotificationField("MessageId",std::to_string(notification.getMessageId()));
+
         std::cout << "Device Id: " << notification.getDeviceId() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("DeviceId",std::string(notification.getDeviceId()));
+
         std::cout << "Device Name: " << notification.getDeviceName() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("DeviceName",std::string(notification.getDeviceName()));
+
         std::cout << "App Id: " << notification.getAppId() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("AppId",std::string(notification.getAppId()));
+
         std::cout << "App Name: " << notification.getAppName() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("AppName",std::string(notification.getAppName()));
+
         std::cout << "Sender BusName: " << notification.getSenderBusName() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("SenderBusName",std::string(notification.getSenderBusName()));
+
         std::cout << "Message Type " << notification.getMessageType() << " " << MessageTypeUtil::getMessageTypeString(notification.getMessageType()).c_str() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("MessageType",std::string(MessageTypeUtil::getMessageTypeString(notification.getMessageType()).c_str()));
+
         std::cout << "Notification version: " << notification.getVersion() << std::endl;
+	myUIDUtils->setAJDeviceNotificationField("Version",std::to_string(notification.getVersion()));
+
 
 /*	xmlNewChild(AJRootNode,NULL,BAD_CAST "MessageId",BAD_CAST std::to_string(notification.getMessageId()).c_str());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "DeviceId",BAD_CAST notification.getDeviceId());
@@ -73,11 +92,16 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "MessageType",BAD_CAST MessageTypeUtil::getMessageTypeString(notification.getMessageType()).c_str());
 	xmlNewChild(AJRootNode,NULL,BAD_CAST "Version",BAD_CAST std::to_string(notification.getVersion()).c_str());
 */
+
+		
+
         // get vector of text messages and iterate through it
         std::vector<NotificationText> vecMessages = notification.getText();
 
         for (std::vector<NotificationText>::const_iterator vecMessage_it = vecMessages.begin(); vecMessage_it != vecMessages.end(); ++vecMessage_it) {
             std::cout << "Language: " << vecMessage_it->getLanguage().c_str() << "  Message: " << vecMessage_it->getText().c_str() << std::endl;
+	   myUIDUtils->setAJDeviceNotificationField("Language",std::string(vecMessage_it->getLanguage().c_str()));
+	   myUIDUtils->setAJDeviceNotificationField("Message",std::string(vecMessage_it->getText().c_str()));
 //	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Language",BAD_CAST vecMessage_it->getLanguage().c_str());
 //	    xmlNewChild(AJRootNode,NULL,BAD_CAST "Message",BAD_CAST vecMessage_it->getText().c_str());
         }
@@ -126,6 +150,11 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
         std::cout << "******************** End New Message Received ********************" << std::endl << std::endl;
 
 //	xmlNewChild(AJRootNode,NULL,BAD_CAST "Status",BAD_CAST "UNREAD");
+	myUIDUtils->setAJDeviceNotificationField("Status","UNREAD");
+
+	myUIDUtils->insertAJDeviceNotificationToDb();
+
+	delete myUIDUtils;
 
         Notification nonConstNotification(notification);
 
