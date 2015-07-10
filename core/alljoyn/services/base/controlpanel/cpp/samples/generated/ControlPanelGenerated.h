@@ -25,9 +25,6 @@
 #include "../generated/MyDeviceOvenAction.h"
 #include "../generated/MyDeviceLightConfirm.h"
 #include "../generated/MyDeviceAreYouSure.h"
-#include "UIDPlugin.h"
-
-extern UIDAddons::UIDBerryClip *myUIDBerryClip;
 
 /**
  * Generated Class - do not change code

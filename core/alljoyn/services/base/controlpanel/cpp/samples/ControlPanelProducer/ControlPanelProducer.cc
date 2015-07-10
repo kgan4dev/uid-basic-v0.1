@@ -28,8 +28,11 @@
 #include <ControlPanelGenerated.h>
 #include <alljoyn/services_common/LogModulesNames.h>
 #include <alljoyn/services_common/GuidUtil.h>
+#include <UIDPlugin.h>
 
-UIDAddons::UIDBerryClip *myUIDBerryClip = new UIDBerryClip();
+using namespace UIDAddons;
+
+extern  UIDBerryClip *myUIDBerryClip;
 
 #define SERVICE_PORT 900
 

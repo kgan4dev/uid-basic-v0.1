@@ -16,6 +16,11 @@
 
 #include "MyDeviceLightConfirm.h"
 #include "ControlPanelProvided.h"
+#include "UIDPlugin.h"
+
+using namespace UIDAddons;
+
+UIDBerryClip *myUIDBerryClip = new UIDBerryClip();
 
 namespace ajn {
 namespace services {
