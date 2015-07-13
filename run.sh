@@ -57,14 +57,14 @@ if [ $arg == 'start' ]; then
 #                printf "Done\n"
 #	fi
 
-	printf "\nControl Panel service	\n"
-	if [ ! -z "$(ps | grep "ControlPanelCon" | awk '{print $1}')" ];then
-		printf "Service already running. . . \n"
-	else
-		printf "Service Starting. . .                   "
-		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
-                printf "Done\n"
-	fi
+#	printf "\nControl Panel service	\n"
+#	if [ ! -z "$(ps | grep "ControlPanelCon" | awk '{print $1}')" ];then
+#		printf "Service already running. . . \n"
+#	else
+#		printf "Service Starting. . .                   "
+#		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
+#                printf "Done\n"
+#	fi
 
 #	printf "Notification Producer service	"
 #	$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/bin/ProducerService >> $path/logs/alljoyn/ProducerService.log  2>&1 &
@@ -131,19 +131,19 @@ elif [ $arg == 'restart' ];then
 #                printf "Done\n"
 #	fi
 
-	printf "\nControl Panel service	\n"
-	if [ ! -z "$(ps | grep "ControlPanelCon" | awk '{print $1}')" ];then
-		printf "Service Stopping. . .			"
-		kill -9 $(ps | grep "ControlPanelCon" | awk '{print $1}')
-		printf "Done\n"
-		printf "Service Starting. . . 			"
-		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
-		printf "Done\n"
-	else
-		printf "Service Starting. . .                   "
-		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
-                printf "Done\n"
-	fi
+#	printf "\nControl Panel service	\n"
+#	if [ ! -z "$(ps | grep "ControlPanelCon" | awk '{print $1}')" ];then
+#		printf "Service Stopping. . .			"
+#		kill -9 $(ps | grep "ControlPanelCon" | awk '{print $1}')
+#		printf "Done\n"
+#		printf "Service Starting. . . 			"
+#		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
+#		printf "Done\n"
+#	else
+#		printf "Service Starting. . .                   "
+#		$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/bin/ControlPanelController >> $path/logs/alljoyn/ControlPanelController.log 2>&1 &
+#                printf "Done\n"
+#	fi
 
 #	printf "Notification Producer service . . .	"
 #	$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/bin/ProducerService >> $path/logs/alljoyn/ProducerService.log  2>&1 &
@@ -189,14 +189,14 @@ elif [ $arg == 'stop' ]; then
 #		printf "Done\n"
 #	fi
 
-	printf "\nControl Panel Service\n"
-	if [ -z $(ps | grep "ControlPanelCon" | awk '{print $1}') ];then
-		printf "Service found not running . . .\n"
-	else
-		printf "Service stopping. . .			"
-		kill -9 $(ps | grep "ControlPanelCon" | awk '{print $1}')
-		printf "Done\n"
-	fi
+#	printf "\nControl Panel Service\n"
+#	if [ -z $(ps | grep "ControlPanelCon" | awk '{print $1}') ];then
+#		printf "Service found not running . . .\n"
+#	else
+#		printf "Service stopping. . .			"
+#		kill -9 $(ps | grep "ControlPanelCon" | awk '{print $1}')
+#		printf "Done\n"
+#	fi
 
 #	printf "Notification Producer Service. . . 	"
 #	kill -9 $(ps | grep "ProducerService" | awk '{print $1}')
@@ -231,12 +231,12 @@ elif [ $arg == "status" ];then
 #                printf "Service is running . . .\n"
 #        fi
 
-        printf "\nControl Panel Service\n"
-        if [ -z $(ps | grep "ControlPanelCon" | awk '{print $1}') ];then
-                printf "Service found not running . . .\n"
-        else
-                printf "Service is running . . .\n"
-        fi
+#        printf "\nControl Panel Service\n"
+#        if [ -z $(ps | grep "ControlPanelCon" | awk '{print $1}') ];then
+#                printf "Service found not running . . .\n"
+#        else
+#                printf "Service is running . . .\n"
+#        fi
 
 	printf "\n"
 else
