@@ -1,6 +1,6 @@
 #Ignore these directories
 core/alljoyn/core/alljoyn/build/**/*
-#core/alljoyn/core/alljoyn/services/about/build/**/*
+core/alljoyn/core/alljoyn/services/about/build/**/*
 core/alljoyn/services/base/services_common/build/**/*
 core/alljoyn/services/base/notification/build/**/*
 core/alljoyn/services/base/controlpanel/build/**/*
