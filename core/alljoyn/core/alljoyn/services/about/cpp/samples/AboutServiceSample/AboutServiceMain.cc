@@ -135,7 +135,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setAppName("About Config", "en");
+    status = propStore->setAppName("Berry Clip Control", "en");
     if (status != ER_OK) {
         return status;
     }
@@ -150,7 +150,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setModelNumber("Wxfy388i");
+    status = propStore->setModelNumber("RPi MS100A");
     if (status != ER_OK) {
         return status;
     }
@@ -175,7 +175,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setDeviceName("My vedams device", "en");
+    status = propStore->setDeviceName("Raspberry Pi", "en");
     if (status != ER_OK) {
         return status;
     }
@@ -190,7 +190,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setDescription("This is an Alljoyn Application", "en");
+    status = propStore->setDescription("This is to control Berry Clip LEDs & to give notifications on SWITCH events", "en");
     if (status != ER_OK) {
         return status;
     }
@@ -205,7 +205,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setManufacturer("Company", "en");
+    status = propStore->setManufacturer("Vedams Inc", "en");
     if (status != ER_OK) {
         return status;
     }
@@ -220,7 +220,7 @@ static QStatus FillAboutPropertyStoreImplData(AboutPropertyStoreImpl* propStore,
         return status;
     }
 
-    status = propStore->setSupportUrl("http://www.alljoyn.org");
+    status = propStore->setSupportUrl("http://ask.allseenalliance.org");
     if (status != ER_OK) {
         return status;
     }
