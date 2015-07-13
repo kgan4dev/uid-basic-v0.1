@@ -6656,3 +6656,691 @@ Content :	89504E47D0A01AA0
 Mimetype :	image/png
 Leaving session id = 2173837953 with :FzBH-3ca.2 status: ER_OK
 3775.446 ****** ERROR NETWORK iodisp            common/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 68): 107 - Transport endpoint is not connected: ER_OS_ERROR
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+   0.364 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+   0.918 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+  35.463 ****** ERROR NETWORK iodisp            common/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 68): 107 - Transport endpoint is not connected: ER_OS_ERROR
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+   0.914 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+   0.221 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+   1.041 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :2QYy_b3X.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = About Config
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :2QYy_b3X.2
+Calling JoinSession BusName = :2QYy_b3X.2 port = 900
+JoinSessionCB(:2QYy_b3X.2) succeeded with id: 2003718185
+Calling SessionJoiner Callback
+
+:2QYy_b3X.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:2QYy_b3X.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:2QYy_b3X.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = About Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is an Alljoyn Application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:2QYy_b3X.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:2QYy_b3X.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:2QYy_b3X.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:2QYy_b3X.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:2QYy_b3X.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:2QYy_b3X.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:2QYy_b3X.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:2QYy_b3X.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 2003718185 with :2QYy_b3X.2 status: ER_OK
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :5rcLHHKY.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = About Config
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :5rcLHHKY.2
+Calling JoinSession BusName = :5rcLHHKY.2 port = 900
+JoinSessionCB(:5rcLHHKY.2) succeeded with id: 1061983025
+Calling SessionJoiner Callback
+
+:5rcLHHKY.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:5rcLHHKY.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:5rcLHHKY.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = About Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is an Alljoyn Application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:5rcLHHKY.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:5rcLHHKY.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:5rcLHHKY.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:5rcLHHKY.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:5rcLHHKY.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:5rcLHHKY.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:5rcLHHKY.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:5rcLHHKY.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 1061983025 with :5rcLHHKY.2 status: ER_OK
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :nGaMzbLI.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = About Config
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :nGaMzbLI.2
+Calling JoinSession BusName = :nGaMzbLI.2 port = 900
+JoinSessionCB(:nGaMzbLI.2) succeeded with id: 2437681639
+Calling SessionJoiner Callback
+
+:nGaMzbLI.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:nGaMzbLI.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:nGaMzbLI.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = About Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is an Alljoyn Application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nGaMzbLI.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nGaMzbLI.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nGaMzbLI.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:nGaMzbLI.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:nGaMzbLI.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:nGaMzbLI.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:nGaMzbLI.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:nGaMzbLI.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 2437681639 with :nGaMzbLI.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :d2lKyv2F.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = About Config
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :d2lKyv2F.2
+Calling JoinSession BusName = :d2lKyv2F.2 port = 900
+JoinSessionCB(:d2lKyv2F.2) succeeded with id: 2028714486
+Calling SessionJoiner Callback
+
+:d2lKyv2F.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:d2lKyv2F.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:d2lKyv2F.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = About Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is an Alljoyn Application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = My vedams device
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Company
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:d2lKyv2F.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:d2lKyv2F.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = Wxfy388i
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://www.alljoyn.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:d2lKyv2F.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:d2lKyv2F.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:d2lKyv2F.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:d2lKyv2F.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:d2lKyv2F.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:d2lKyv2F.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 2028714486 with :d2lKyv2F.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :xPB2zNHj.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :xPB2zNHj.2
+Calling JoinSession BusName = :xPB2zNHj.2 port = 900
+JoinSessionCB(:xPB2zNHj.2) succeeded with id: 552012632
+Calling SessionJoiner Callback
+
+:xPB2zNHj.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:xPB2zNHj.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:xPB2zNHj.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2015-07-15
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This allows to control berry clip LEDs and monitors notifications from SWITHC
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:xPB2zNHj.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2015-07-15
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:xPB2zNHj.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2015-07-15
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:xPB2zNHj.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:xPB2zNHj.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:xPB2zNHj.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:xPB2zNHj.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:xPB2zNHj.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:xPB2zNHj.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 552012632 with :xPB2zNHj.2 status: ER_OK
