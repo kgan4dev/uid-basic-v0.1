@@ -154,7 +154,6 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 	myUIDUtils->setAJDeviceNotificationField("Status","UNREAD");
 
 	myUIDUtils->insertAJDeviceNotificationToDb();
-	sleep(5);
 
 	delete myUIDUtils;
 
