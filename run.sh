@@ -15,6 +15,10 @@ elif [ $arch == 'armv61' ]; then
         TARGET_CPU='arm'
 fi
 
+if [ -d "logs/alljoyn" ]; then
+	mkdir -p logs/alljoyn
+fi
+
 # Running Alljoyn component services
 if [ $arg == 'start' ]; then
 	export LD_LIBRARY_PATH=$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/cpp/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/about/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/notification/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/services_common/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/onboarding/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/config/lib:$path/core/alljoyn/core/alljoyn/build/linux/$TARGET_CPU/debug/dist/controlpanel/lib:$LD_LIBRARY_PATH
