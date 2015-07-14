@@ -198,14 +198,14 @@ start:
     }
 
     std::cout << "Sent announce, waiting for Contollers" << std::endl;
-    std::cout << "Enter in the ControlPanelService object path or press 'enter' to use default:" << std::endl;
+//    std::cout << "Enter in the ControlPanelService object path or press 'enter' to use default:" << std::endl;
 
     std::string input;
     qcc::String controlPanelServiceObjectPath;
     qcc::String defaultControlPanelServiceObjectPath = "/ControlPanel/MyDevice/areYouSure";
 
-    getline(std::cin, input);
-    while (s_interrupt == false && s_restart == false && !std::cin.eof()) {
+//    getline(std::cin, input);
+    while (s_interrupt == false && s_restart == false) {
 
 	if(myUIDBerryClip->Status(SWITCH)) {
 
