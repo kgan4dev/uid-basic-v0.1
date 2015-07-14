@@ -22,7 +22,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
-#include "UIDPlugin.h"
+#include "UIDPluginNotification.h"
 
 using namespace ajn;
 using namespace services;
