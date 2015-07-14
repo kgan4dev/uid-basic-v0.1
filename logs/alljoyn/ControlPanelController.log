@@ -760,3 +760,811 @@ Going to call setValue for all Properties now
 
 Now parsing language: de-AT
 Now parsing language: zh-Hans-CN
+Beginning ControlPanel Application. (Press CTRL+C to end application)
+   0.782 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.795 TRACE    ControlPanel external         ...ControlPanelService.cc:177 | Initializing Controller
+   0.796 DEBUG    ControlPanel external         ...ControlPanelService.cc:223 | Initialized Controller successfully
+Finished setup. Waiting for Contollees
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :Aoi5QUp-.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+Announcedata
+Key name=AppId value:0123456789ABCDEC
+Key name=AppName value=Berry Clip Control
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=1231232145667745675477
+Key name=DeviceName value=Raspberry Pi
+Key name=Manufacturer value=Vedams Inc
+Key name=ModelNumber value=RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+   1.245 ****** ERROR NETWORK iodisp            common/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 70): 107 - Transport endpoint is not connected: ER_OS_ERROR
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :Y3NQYbxz.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/ControlPanel/MyDevice/rootContainer value=org.alljoyn.ControlPanel.ControlPanel
+key=/emergency value=org.alljoyn.Notification
+key=/info value=org.alljoyn.Notification
+key=/warning value=org.alljoyn.Notification
+Announcedata
+Key name=AppId value:F4422FE72A2B4B30BEE912984C25B3D3
+Key name=AppName value=testappName
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=bf9ee793719644889f787ba8c6e64a14
+Key name=DeviceName value=testDeviceName
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+  47.534 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:184 | ObjectPath contains ControlPanel
+  47.534 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:251 | Creating new unit MyDevice
+  47.534 DEBUG    ControlPanel lepDisp          ...ntrolPanelController.cc:62 | Adding ControlPanelUnit for objectPath: /ControlPanel/MyDevice/rootContainer
+  47.534 DEBUG    ControlPanel lepDisp          ...ntrolPanelController.cc:68 | Calling startSession for device :Y3NQYbxz.2
+  47.621 DEBUG    ControlPanel lepDisp          ...lPanelSessionHandler.cc:61 | Joining session succeeded. SessionId: 150242994
+  47.621 DEBUG    ControlPanel lepDisp          ...ontrolPanelBusObject.cc:53 | Created ControlPanelBusObject successfully
+  47.645 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.656 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/de_AT
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.668 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/zh_Hans_CN
+  47.678 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+  47.678 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+  47.678 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.678 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.679 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.679 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.679 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+  47.679 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.679 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+Session has been established with device: :Y3NQYbxz.2
+Now parsing unit: MyDevice
+Now parsing panelName: rootContainer
+Now parsing language: en
+  47.679 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:62 | Created ContainerBusObject successfully
+  47.704 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/lightAction
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.715 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.715 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextRedLightAction
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.726 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.726 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/yellowLightAction
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.736 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.736 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextYellowLightAction
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.747 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.747 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/greenlightAction
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.770 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.770 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextGreenLightAction
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+  47.782 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+  47.782 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  47.809 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/lightAction/RedLightConfirm
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  47.820 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  47.820 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: RedLightConfirm
+  47.820 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  47.836 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: lightAction
+  47.836 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  47.860 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextRedLightAction/NextRedLightConfirm
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  47.871 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  47.871 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextRedLightConfirm
+  47.872 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  47.888 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextRedLightAction
+  47.888 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  47.912 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/yellowLightAction/YellowLightConfirm
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  47.928 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  47.928 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: YellowLightConfirm
+  47.929 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  47.957 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: yellowLightAction
+  47.957 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  47.984 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextYellowLightAction/NextYellowLightConfirm
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  47.995 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  47.995 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextYellowLightConfirm
+  47.995 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  48.012 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextYellowLightAction
+  48.012 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  48.038 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/greenlightAction/GreenLightConfirm
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  48.049 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  48.049 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: GreenLightConfirm
+  48.049 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  48.065 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: greenlightAction
+  48.065 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+  48.092 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextGreenLightAction/NextGreenLightConfirm
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+  48.102 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+  48.103 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextGreenLightConfirm
+  48.103 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+  48.119 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextGreenLightAction
+Finished loading widget: rootContainer
+Container name: rootContainer
+Container version: 1
+Container is not secured
+Container is enabled
+Container label: Berry Clip LEDs Controller
+Container bgColor: 512
+Something else Widget called
+Container hints: VERTICAL_LINEAR, HORIZONTAL_LINEAR
+Print ChildWidgets: 
+  Action name: lightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: RED LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: RedLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of RED LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextRedLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: RED LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextRedLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of RED LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: yellowLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: YELLOW LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: YellowLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of YELLOW LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextYellowLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: YELLOW LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextYellowLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of YELLOW LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: greenlightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: GREEN LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: GreenLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of GREEN LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextGreenLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: GREEN LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextGreenLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of GREEN LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+Going to execute all Actions now
+
+Going to execute all Dialog Actions now
+Execute Actions for RedLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.760 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextRedLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.779 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for YellowLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.792 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextYellowLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.808 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for GreenLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.823 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextGreenLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+  48.839 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+
+Going to call setValue for all Properties now
+
+Now parsing language: de-AT
+Now parsing language: zh-Hans-CN
+  58.305 DEBUG    ControlPanel lepDisp          ...lPanelSessionHandler.cc:41 | Session lost for sessionId: 150242994
+Received sessionLost for device :Y3NQYbxz.2
+Sleeping 5 seconds before cleaning up device
+  63.305 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:108 | Session not started. Can't end Session
+    Deleting Controllable Device succeeded
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :IGNl835f.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/About/DeviceIcon value=org.alljoyn.Icon
+Announcedata
+Key name=AppId value:0123456789ABCDEC
+Key name=AppName value=Berry Clip Control
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=1231232145667745675477
+Key name=DeviceName value=Raspberry Pi
+Key name=Manufacturer value=Vedams Inc
+Key name=ModelNumber value=RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+
+
+*********************************************************************************
+version  1
+port  900
+busName  :FznDSKra.2
+ObjectDescriptions
+key=/About value=org.alljoyn.About
+key=/ControlPanel/MyDevice/rootContainer value=org.alljoyn.ControlPanel.ControlPanel
+key=/emergency value=org.alljoyn.Notification
+key=/info value=org.alljoyn.Notification
+key=/warning value=org.alljoyn.Notification
+Announcedata
+Key name=AppId value:A5882988199F4EAE8F606526BFF6A77
+Key name=AppName value=testappName
+Key name=DefaultLanguage value=en
+Key name=DeviceId value=bf9ee793719644889f787ba8c6e64a14
+Key name=DeviceName value=testDeviceName
+Key name=Manufacturer value=Company
+Key name=ModelNumber value=Wxfy388i
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+ 117.034 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:184 | ObjectPath contains ControlPanel
+ 117.034 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:251 | Creating new unit MyDevice
+ 117.034 DEBUG    ControlPanel lepDisp          ...ntrolPanelController.cc:62 | Adding ControlPanelUnit for objectPath: /ControlPanel/MyDevice/rootContainer
+ 117.034 DEBUG    ControlPanel lepDisp          ...ntrolPanelController.cc:68 | Calling startSession for device :FznDSKra.2
+ 117.114 DEBUG    ControlPanel lepDisp          ...lPanelSessionHandler.cc:61 | Joining session succeeded. SessionId: 556830329
+ 117.114 DEBUG    ControlPanel lepDisp          ...ontrolPanelBusObject.cc:53 | Created ControlPanelBusObject successfully
+ 117.135 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.145 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/de_AT
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.156 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:154 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/zh_Hans_CN
+ 117.166 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.alljoyn.ControlPanel.Container
+ 117.166 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.allseen.Introspectable
+ 117.166 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.166 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.166 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.167 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.167 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+ 117.167 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:172 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.167 DEBUG    ControlPanel lepDisp          ...ntrolPanelBusObject.cc:180 | Ignoring interface - not a container interface
+Session has been established with device: :FznDSKra.2
+Now parsing unit: MyDevice
+Now parsing panelName: rootContainer
+Now parsing language: en
+ 117.167 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:62 | Created ContainerBusObject successfully
+ 117.196 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/lightAction
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.206 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.206 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextRedLightAction
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.216 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.216 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/yellowLightAction
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.226 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.226 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextYellowLightAction
+ 117.260 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.260 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.261 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.261 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/greenlightAction
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.277 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.277 DEBUG    ControlPanel lepDisp          ...s/ContainerBusObject.cc:93 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextGreenLightAction
+ 117.290 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.alljoyn.ControlPanel.Action
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.allseen.Introspectable
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.allseen.Introspectable
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Introspectable
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Introspectable
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Peer
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Peer
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:111 | InterfaceName is : org.freedesktop.DBus.Properties
+ 117.291 DEBUG    ControlPanel lepDisp          .../ContainerBusObject.cc:144 | Ignoring interfaceName: org.freedesktop.DBus.Properties
+ 117.291 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.382 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/lightAction/RedLightConfirm
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.397 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.397 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: RedLightConfirm
+ 117.397 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.433 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: lightAction
+ 117.434 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.481 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextRedLightAction/NextRedLightConfirm
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.492 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.492 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextRedLightConfirm
+ 117.492 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.511 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextRedLightAction
+ 117.511 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.536 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/yellowLightAction/YellowLightConfirm
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.546 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.547 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.547 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.547 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.547 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: YellowLightConfirm
+ 117.547 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.564 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: yellowLightAction
+ 117.564 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.590 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextYellowLightAction/NextYellowLightConfirm
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.601 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.601 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextYellowLightConfirm
+ 117.601 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.617 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextYellowLightAction
+ 117.617 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.641 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/greenlightAction/GreenLightConfirm
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.651 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.651 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: GreenLightConfirm
+ 117.651 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.667 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: greenlightAction
+ 117.667 DEBUG    ControlPanel lepDisp          ...ects/ActionBusObject.cc:73 | Created ActionBusObject successfully
+ 117.692 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:146 | ObjectPath is: /ControlPanel/MyDevice/rootContainer/en/nextGreenLightAction/NextGreenLightConfirm
+ 117.702 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.alljoyn.ControlPanel.Dialog
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.allseen.Introspectable
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.allseen.Introspectable
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Introspectable
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Introspectable
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Peer
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Peer
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:164 | InterfaceName is org.freedesktop.DBus.Properties
+ 117.703 DEBUG    ControlPanel lepDisp          ...cts/ActionBusObject.cc:172 | Ignoring interfaceName:  org.freedesktop.DBus.Properties
+ 117.703 DEBUG    ControlPanel lepDisp          ...ets/ActionWithDialog.cc:64 | Adding childDialog named: NextGreenLightConfirm
+ 117.703 DEBUG    ControlPanel lepDisp          ...ects/DialogBusObject.cc:92 | Created DialogBusObject successfully
+ 117.719 DEBUG    ControlPanel lepDisp          ...c/Widgets/Container.cc:184 | Adding childWidget named: nextGreenLightAction
+Finished loading widget: rootContainer
+Container name: rootContainer
+Container version: 1
+Container is not secured
+Container is enabled
+Container label: Berry Clip LEDs Controller
+Container bgColor: 512
+Something else Widget called
+Container hints: VERTICAL_LINEAR, HORIZONTAL_LINEAR
+Print ChildWidgets: 
+  Action name: lightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: RED LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: RedLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of RED LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextRedLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: RED LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextRedLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of RED LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: yellowLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: YELLOW LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: YellowLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of YELLOW LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextYellowLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: YELLOW LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextYellowLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of YELLOW LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: greenlightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: GREEN LED 1
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: GreenLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of GREEN LED 1
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+  Action name: nextGreenLightAction
+  Action version: 1
+  Action is not secured
+  Action is enabled
+  Action label: GREEN LED 2
+  Action bgColor: 1024
+  Action hints: ACTIONBUTTON
+  Printing ChildDialog: 
+    Dialog name: NextGreenLightConfirm
+    Dialog version: 1
+    Dialog is not secured
+    Dialog is enabled
+    Dialog label: Are you sure?
+    Dialog bgColor: 1929
+    Dialog hints: ALERTDIALOG
+    Dialog message: Change the state of GREEN LED 2 
+    Dialog numActions: 2
+    Dialog Label for Action1: TURN ON
+    Dialog Label for Action2: TURN OFF
+
+Going to execute all Actions now
+
+Going to execute all Dialog Actions now
+Execute Actions for RedLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.356 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextRedLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.374 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for YellowLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.390 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextYellowLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.405 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for GreenLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.421 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+Execute Actions for NextGreenLightConfirm which has 2 actions: 
+    Action 1 execution succeeded
+    Action 2 execution succeeded
+ 118.434 HL_DBG   ControlPanel lepDisp          .../src/Widgets/Dialog.cc:352 | Cannot execute Action3 - numActions is less than 3
+    Action 3 execution failed
+
+Going to call setValue for all Properties now
+
+Now parsing language: de-AT
+Now parsing language: zh-Hans-CN
+ 126.959 DEBUG    ControlPanel lepDisp          ...lPanelSessionHandler.cc:41 | Session lost for sessionId: 556830329
+Received sessionLost for device :FznDSKra.2
+Sleeping 5 seconds before cleaning up device
+ 131.959 DEBUG    ControlPanel lepDisp          .../ControlPanelDevice.cc:108 | Session not started. Can't end Session
+    Deleting Controllable Device succeeded

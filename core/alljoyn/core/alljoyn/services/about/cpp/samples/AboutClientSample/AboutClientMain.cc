@@ -25,7 +25,7 @@
 #include "AboutClientSessionListener.h"
 #include "AboutClientAnnounceHandler.h"
 #include "AboutClientSessionJoiner.h"
-#include "UIDPlugin.h"
+#include "UIDPluginAbout.h"
 #include <sstream>
 #include <string.h>
 

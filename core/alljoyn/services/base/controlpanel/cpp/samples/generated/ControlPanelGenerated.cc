@@ -464,11 +464,11 @@ QStatus ControlPanelGenerated::PrepareWidgets(ControlPanelControllee*& controlPa
     myDeviceNextGreenLightActionlabelVec.push_back("GREEN LED 2");
     myDeviceNextGreenLightActionlabelVec.push_back("Ofenlicht anschalten");
     myDeviceNextGreenLightActionlabelVec.push_back(UNICODE_TURN_ON_OVEN_LIGHT);
-    myDeviceNextGreenLightAction->setLabels(myDeviceNextLightActionlabelVec);
+    myDeviceNextGreenLightAction->setLabels(myDeviceNextGreenLightActionlabelVec);
 
     std::vector<uint16_t> myDeviceNextGreenLightActionHintsVec;
     myDeviceNextGreenLightActionHintsVec.push_back(ACTIONBUTTON);
-    myDeviceNextGreenLightAction->setHints(myDeviceNextLightActionHintsVec);
+    myDeviceNextGreenLightAction->setHints(myDeviceNextGreenLightActionHintsVec);
 
     myDeviceNextGreenLightConfirm = new MyDeviceNextGreenLightConfirm("NextGreenLightConfirm", NULL);
     CHECK(myDeviceNextGreenLightAction->addChildDialog(myDeviceNextGreenLightConfirm));

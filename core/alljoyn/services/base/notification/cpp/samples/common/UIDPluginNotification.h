@@ -1,5 +1,5 @@
-#ifndef UIDPLUGIN_H
-#define UIDPLUGIN_H
+#ifndef UIDPLUGINNOTIFICATION_H
+#define UIDPLUGINNOTIFICATION_H
 
 #include <iostream>
 #include <mysql/mysql.h>
@@ -36,19 +36,27 @@ struct AJDeviceNotification {
 	string Version;
 	string Language;
 	string Message;
+	string Status;
 };
 
 class UIDUtils {
 	AJDeviceProfile myAJDeviceProfile;
+	AJDeviceNotification myAJDeviceNotification;
+
 	MYSQL *conn;
 
 	public:
 		void setAJDeviceProfileField(string key, string value);
 		string getAJDeviceProfileField(string key);
 
+		void setAJDeviceNotificationField(string key, string value);
+		string getAJDeviceNotificationField(string key);
+
 		void insertAJDeviceProfileToDb();
 		void updateAJDeviceBusStatusToDb();
 		void DeviceToCheckStatus();
+
+		void insertAJDeviceNotificationToDb();
 
 		UIDUtils();
 		~UIDUtils();
