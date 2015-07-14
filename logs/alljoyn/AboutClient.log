@@ -13162,3 +13162,945 @@ Content :	89504E47D0A01AA0
 		4E44AE426082
 Mimetype :	image/png
 Leaving session id = 893259871 with :IGNl835f.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :nDYLOKNl.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :nDYLOKNl.2
+Calling JoinSession BusName = :nDYLOKNl.2 port = 900
+JoinSessionCB(:nDYLOKNl.2) succeeded with id: 141069419
+Calling SessionJoiner Callback
+
+:nDYLOKNl.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:nDYLOKNl.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:nDYLOKNl.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nDYLOKNl.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nDYLOKNl.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:nDYLOKNl.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:nDYLOKNl.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:nDYLOKNl.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:nDYLOKNl.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:nDYLOKNl.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:nDYLOKNl.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 141069419 with :nDYLOKNl.2 status: ER_OK
+MYSQL ERROR : Unknown database 'UIDTest'
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :kT2Bnu8H.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :kT2Bnu8H.2
+Calling JoinSession BusName = :kT2Bnu8H.2 port = 900
+JoinSessionCB(:kT2Bnu8H.2) succeeded with id: 1863110184
+Calling SessionJoiner Callback
+
+:kT2Bnu8H.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:kT2Bnu8H.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:kT2Bnu8H.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:kT2Bnu8H.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:kT2Bnu8H.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:kT2Bnu8H.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 1863110184 with :kT2Bnu8H.2 status: ER_OK
+MYSQL ERROR : Unknown database 'UIDTest'
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :kT2Bnu8H.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :kT2Bnu8H.2
+Calling JoinSession BusName = :kT2Bnu8H.2 port = 900
+JoinSessionCB(:kT2Bnu8H.2) succeeded with id: 1523742194
+Calling SessionJoiner Callback
+
+:kT2Bnu8H.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:kT2Bnu8H.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:kT2Bnu8H.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:kT2Bnu8H.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:kT2Bnu8H.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:kT2Bnu8H.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 1523742194 with :kT2Bnu8H.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :kT2Bnu8H.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :kT2Bnu8H.2
+   1.144 ****** ERROR NETWORK iodisp            common/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 68): 107 - Transport endpoint is not connected: ER_OS_ERROR
+Calling JoinSession BusName = :kT2Bnu8H.2 port = 900
+JoinSessionCB(:kT2Bnu8H.2) succeeded with id: 3767752889
+Calling SessionJoiner Callback
+
+:kT2Bnu8H.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:kT2Bnu8H.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:kT2Bnu8H.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:kT2Bnu8H.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:kT2Bnu8H.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:kT2Bnu8H.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:kT2Bnu8H.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:kT2Bnu8H.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 3767752889 with :kT2Bnu8H.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :1hcEZIhW.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :1hcEZIhW.2
+Calling JoinSession BusName = :1hcEZIhW.2 port = 900
+JoinSessionCB(:1hcEZIhW.2) succeeded with id: 719872530
+Calling SessionJoiner Callback
+
+:1hcEZIhW.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:1hcEZIhW.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:1hcEZIhW.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:1hcEZIhW.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:1hcEZIhW.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:1hcEZIhW.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 719872530 with :1hcEZIhW.2 status: ER_OK
+ 229.719 ****** ERROR NETWORK iodisp            common/os/posix/Socket.cc:462 | Shutdown socket (sockfd = 72): 107 - Transport endpoint is not connected: ER_OS_ERROR
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :1hcEZIhW.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :1hcEZIhW.2
+Calling JoinSession BusName = :1hcEZIhW.2 port = 900
+JoinSessionCB(:1hcEZIhW.2) succeeded with id: 394436813
+Calling SessionJoiner Callback
+
+:1hcEZIhW.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:1hcEZIhW.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:1hcEZIhW.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:1hcEZIhW.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:1hcEZIhW.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:1hcEZIhW.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 394436813 with :1hcEZIhW.2 status: ER_OK
+AllJoyn Library version: v14.06.00a
+AllJoyn Library build info: AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)
+BusAttachment started.
+Daemon Connect succeeded.
+
+
+*********************************************************************************
+version   1
+port      900
+busName   :1hcEZIhW.2
+ObjectDescriptions :
+Object path = /About
+	Interface = org.alljoyn.About
+Object path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+AnnounceData :
+Key name = AppId                value = 0123456789ABCDEC
+Key name = AppName              value = Berry Clip Control
+Key name = DefaultLanguage      value = en
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+*********************************************************************************
+
+Calling AnnounceHandler Callback
+Calling PingAsync BusName = :1hcEZIhW.2
+Calling JoinSession BusName = :1hcEZIhW.2 port = 900
+JoinSessionCB(:1hcEZIhW.2) succeeded with id: 2119454603
+Calling SessionJoiner Callback
+
+:1hcEZIhW.2 AboutClient ObjectDescriptions
+-----------------------------------
+Object Path = /About
+	Interface = org.alljoyn.About
+Object Path = /About/DeviceIcon
+	Interface = org.alljoyn.Icon
+
+:1hcEZIhW.2 AboutClient AboutData Get Supported Languages
+-----------------------------------
+
+:1hcEZIhW.2 AboutClient AboutData using language=en
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Berry Clip Control
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = This is to control Berry Clip LEDs & to give notifications on SWITCH events
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Raspberry Pi
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Vedams Inc
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=sp
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = Acerca Config
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = Esta es una Alljoyn aplicacion
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mi nombre de dispositivo
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Empresa
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient AboutData using language=fr
+-----------------------------------
+Key name = AJSoftwareVersion    value = v14.06.00a
+Key name = AppId                value = 00102030405060708090A0B0C0D0E0C0
+Key name = AppName              value = À propos de la configuration
+Key name = DateOfManufacture    value = 2199-10-01
+Key name = DefaultLanguage      value = en
+Key name = Description          value = C'est une Alljoyn application
+Key name = DeviceId             value = 1231232145667745675477
+Key name = DeviceName           value = Mon nom de l'appareil
+Key name = HardwareVersion      value = 355.499. b
+Key name = Manufacturer         value = Entreprise
+Key name = ModelNumber          value = RPi MS100A
+Key name = SoftwareVersion      value = 12.20.44 build 44454
+Key name = SupportUrl           value = http://ask.allseenalliance.org
+Key name = SupportedLanguages   values: en sp fr 
+
+:1hcEZIhW.2 AboutClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetUrl
+-----------------------------------
+url = 
+
+:1hcEZIhW.2 AboutIconClient GetVersion
+-----------------------------------
+Version = 1
+
+:1hcEZIhW.2 AboutIconClient GetMimeType
+-----------------------------------
+Mimetype : image/png
+
+:1hcEZIhW.2 AboutIconClient GetSize
+-----------------------------------
+Size = 134
+
+:1hcEZIhW.2 AboutIconClient GetIcon
+-----------------------------------
+Content size = 134
+Content :	89504E47D0A01AA0
+		000000D049484452
+		000000A0000000A0
+		8020000000205058
+		EA0000004067414D
+		410000AFC837508A
+		E900000019744558
+		74536F6674776172
+		650041646F626520
+		496D616765526561
+		647971C9653C0000
+		00184944415478DA
+		62FC3F959F103760
+		62C0B046AA344080
+		1000607C10B7ED4B
+		532C000000004945
+		4E44AE426082
+Mimetype :	image/png
+Leaving session id = 2119454603 with :1hcEZIhW.2 status: ER_OK

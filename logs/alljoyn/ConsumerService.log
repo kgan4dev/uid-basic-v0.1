@@ -2005,3 +2005,730 @@ Empty list means all app names.
    0.796 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
    0.796 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
 Waiting for notifications.
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.276 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.279 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.279 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.280 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.286 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.287 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.287 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.315 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.315 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.316 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.338 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.338 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.339 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.339 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.339 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.339 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.359 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.360 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   0.360 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.493 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.496 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.497 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.497 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.519 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.520 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.520 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.543 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.562 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.562 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.565 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.565 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.565 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.565 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.566 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.566 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.569 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.569 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   0.569 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.999 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   1.002 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   1.003 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   1.003 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   1.021 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   1.021 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   1.021 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   1.072 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   1.073 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   1.073 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   1.077 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   1.079 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   1.079 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   1.080 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   1.080 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   1.080 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   1.128 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   1.128 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   1.129 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.668 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.675 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.676 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.678 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.710 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.710 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.714 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.730 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.731 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.731 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.763 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.763 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.763 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.763 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.763 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.764 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.765 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.765 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   0.766 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+ 213.868 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856044
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856044
+End handling notification!!!
+1554.744 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856044
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856044
+End handling notification!!!
+3863.395 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856044
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856044
+End handling notification!!!
+ 227.980 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856045
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856045
+End handling notification!!!
+1568.446 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856045
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856045
+End handling notification!!!
+1570.613 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856046
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856046
+End handling notification!!!
+ 231.837 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856046
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856046
+End handling notification!!!
+3879.962 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856046
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856046
+End handling notification!!!
+3924.531 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856047
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856047
+End handling notification!!!
+1616.631 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856047
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856047
+End handling notification!!!
+ 276.860 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856047
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856047
+End handling notification!!!
+ 321.952 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856048
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856048
+End handling notification!!!
+1662.895 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856048
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856048
+End handling notification!!!
+3970.971 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856048
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856048
+End handling notification!!!
+1767.192 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856049
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856049
+End handling notification!!!
+4076.166 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856049
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856049
+End handling notification!!!
+ 428.460 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856049
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856049
+End handling notification!!!
+ 440.098 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856050
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856050
+End handling notification!!!
+4088.675 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856050
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856050
+End handling notification!!!
+1780.922 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856050
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856050
+End handling notification!!!
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.170 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.177 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.177 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.178 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.227 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.227 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.227 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.258 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.259 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.259 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.264 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.264 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.264 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.264 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.264 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.264 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.266 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.266 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   0.266 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+   1.705 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856050
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856050
+End handling notification!!!
+4211.213 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856051
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856051
+End handling notification!!!
+  39.359 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856051
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+1904.035 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856051
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856051
+End handling notification!!!
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856051
+End handling notification!!!
+Begin Consumer Application. (Press CTRL+C to end application)
+Enter in a list of app names (separated by ';') you would like to receive notifications from.
+Empty list means all app names.
+   0.775 ****** ERROR NETWORK external          common/os/posix/Socket.cc:345 | Binding (sockfd = 51) to 0.0.0.0 9955: 98 - Address already in use: ER_OS_ERROR
+   0.780 DEBUG    Notification external         ...NotificationService.cc:132 | Init receive
+   0.781 DEBUG    Notification external         ...ionTransportConsumer.cc:49 | Registered the SignalHandler successfully
+   0.782 DEBUG    Notification external         ...n/cpp/src/Transport.cc:332 | Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification'
+   0.802 TRACE    Notification external         ...ionDismisserReceiver.cc:34 | NotificationDismisserReceiver::NotificationDismisserReceiver() - called()
+   0.804 DEBUG    Notification external         ...ionDismisserReceiver.cc:54 | Registered the SignalHandler successfully
+   0.808 DEBUG    Notification external         ...n/cpp/src/Transport.cc:371 | NotificationDismisserReceiver Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Dismisser'
+   0.844 DEBUG    Notification external         ...ationDismisserSender.cc:42 | NotificationDismisserSender()  - Got objectpath=/notificationDismisser
+   0.845 DEBUG    Notification external         ...nTransportSuperAgent.cc:67 | Registered the SignalHandler successfully
+   0.845 DEBUG    Notification external         ...n/cpp/src/Transport.cc:416 | SuperAgent Match String is: type='signal',sessionless='t',interface='org.alljoyn.Notification.Superagent'
+   0.847 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:26 | AnnounceHandler::AnnounceHandler
+   0.847 TRACE    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:31 | AnnouncementRegistrar::RegisterAnnounceHandler
+   0.847 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:33 | InternalAnnounceHandler::InternalAnnounceHandler
+   0.848 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...trar.cc:94 | AnnouncementRegistrar::RegisterAnnounceHandler Registered Signal Handler
+   0.848 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:64 | InternalAnnounceHandler::AddHandler
+   0.848 TRACE    ALLJOYN_ABOUT_ANNOUNCE_HANDLER external ...nceHandler.cc:81 | Calling AddMatch("type='signal',interface='org.alljoyn.About',member='Announce',sessionless='t',implements='org.alljoyn.Notification.Superagent'")
+   0.850 DEBUG    ALLJOYN_ABOUT_ANNOUNCEMENT_REGISTRAR external ...rar.cc:103 | AnnouncementRegistrar::RegisterAnnounceHandler result ER_OK
+   0.850 DEBUG    Notification external         ...n/cpp/src/Transport.cc:432 | successfully listens announcements.
+   0.850 DEBUG    Notification external         ...n/cpp/src/Transport.cc:441 | Started Receiver successfully
+Waiting for notifications.
+   2.302 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856051
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856051
+End handling notification!!!
+  14.197 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856052
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+2067.476 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856052
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856052
+End handling notification!!!
+4375.973 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856052
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856052
+End handling notification!!!
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856052
+End handling notification!!!
+  43.089 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856053
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+2096.221 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856053
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856053
+End handling notification!!!
+4404.293 DEBUG    Notification lepDisp          ...ionTransportConsumer.cc:58 | Received Message from producer.
+******************** Begin New Message Received ********************
+Message Id: 917856053
+Device Id: bf9ee793719644889f787ba8c6e64a14
+Device Name: testDeviceName
+App Id: EBF57D8F6C0949C29880411BA408F02C
+App Name: testappName
+Sender BusName: :KQMBmJyF.2
+Message Type 2 info
+Notification version: 2
+Language: en  Message: Transition event generated from Berry Clip button
+Other parameters included:
+ControlPanelService object path: 
+OriginalSender: :KQMBmJyF.2
+******************** End New Message Received ********************
+
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856053
+End handling notification!!!
+Notification action (0-Nothing 1-Dismiss):
+Nothing planed to do with the notification message id:917856053
+End handling notification!!!

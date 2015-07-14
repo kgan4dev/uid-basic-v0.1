@@ -83,14 +83,14 @@ void UIDUtils::insertAJDeviceCPDialogWidgetToDb () {
 	MYSQL *conn;
 
 	string createTable = "CREATE TABLE IF NOT EXISTS UIDTestDialogWidget (\
-name VARCHAR(20) NOT NULL,\
+name VARCHAR(30) NOT NULL,\
 version VARCHAR(5) NOT NULL,\
 secured VARCHAR(5) NOT NULL,\
 enabled VARCHAR(5) NOT NULL,\
 label VARCHAR(20) NOT NULL,\
 bgColor VARCHAR(5) NOT NULL,\
-hints VARCHAR(10) NOT NULL,\
-message VARCHAR(30) NOT NULL,\
+hints VARCHAR(15) NOT NULL,\
+message VARCHAR(50) NOT NULL,\
 numActions VARCHAR(5) NOT NULL,\
 LabelforAction1 VARCHAR(20) NOT NULL,\
 LabelforAction2 VARCHAR(20) NOT NULL,\
@@ -197,15 +197,15 @@ void UIDUtils::insertAJDeviceCPActionWidgetToDb () {
 	MYSQL *conn;
 
 	string createTable = "CREATE TABLE IF NOT EXISTS UIDTestActionWidget (\
-name VARCHAR(20) NOT NULL,\
+name VARCHAR(30) NOT NULL,\
 version VARCHAR(5) NOT NULL,\
 secured VARCHAR(5) NOT NULL,\
 enabled VARCHAR(5) NOT NULL,\
 label VARCHAR(20) NOT NULL,\
 bgColor VARCHAR(5) NOT NULL,\
-hints VARCHAR(10) NOT NULL,\
+hints VARCHAR(15) NOT NULL,\
 ChildDialog VARCHAR(5) NOT NULL,\
-ChildName VARCHAR(20) NOT NULL)";
+ChildName VARCHAR(30) NOT NULL)";
 
 	string insertTable = "INSERT INTO UIDTestActionWidget (name, version,\
 secured, enabled, label, bgColor, hints, ChildDialog, ChildName )\
