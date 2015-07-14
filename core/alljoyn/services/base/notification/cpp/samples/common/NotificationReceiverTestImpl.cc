@@ -22,6 +22,7 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <unistd.h>
 #include "UIDPluginNotification.h"
 
 using namespace ajn;
@@ -153,6 +154,7 @@ void NotificationReceiverTestImpl::Receive(Notification const& notification) {
 	myUIDUtils->setAJDeviceNotificationField("Status","UNREAD");
 
 	myUIDUtils->insertAJDeviceNotificationToDb();
+	sleep(5);
 
 	delete myUIDUtils;
 

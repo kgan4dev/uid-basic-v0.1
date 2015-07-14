@@ -194,7 +194,7 @@ HardwareVersion VARCHAR(10) NOT NULL,\
 Manufacturer VARCHAR(10) NOT NULL,\
 ModelNumber VARCHAR(10) NOT NULL,\
 SoftwareVersion VARCHAR(10) NOT NULL,\
-SupportUrl VARCHAR(20) NOT NULL,\
+SupportUrl VARCHAR(30) NOT NULL,\
 SupportedLanguages VARCHAR(10) NOT NULL,\
 BusName VARCHAR(15) NOT NULL,\
 Status VARCHAR(10) NOT NULL)";

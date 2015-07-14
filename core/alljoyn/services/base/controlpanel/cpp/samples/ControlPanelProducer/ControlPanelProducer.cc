@@ -147,9 +147,9 @@ start:
     controlpanelBusListener = new CommonBusListener(bus, daemonDisconnectCB);
 
     qcc::String device_id, app_id;
-    qcc::String app_name = "testappName";
+    qcc::String app_name = "BerryClipControl";
     DeviceNamesType deviceNames;
-    deviceNames.insert(std::pair<qcc::String, qcc::String>("en", "testDeviceName"));
+    deviceNames.insert(std::pair<qcc::String, qcc::String>("en", "RaspberryPi"));
     GuidUtil::GetInstance()->GetDeviceIdString(&device_id);
     GuidUtil::GetInstance()->GenerateGUID(&app_id);
 
@@ -202,7 +202,7 @@ start:
 
     std::string input;
     qcc::String controlPanelServiceObjectPath;
-    qcc::String defaultControlPanelServiceObjectPath = "/ControlPanel/MyDevice/areYouSure";
+//    qcc::String defaultControlPanelServiceObjectPath = "/ControlPanel/MyDevice/areYouSure";
 
 //    getline(std::cin, input);
     while (s_interrupt == false && s_restart == false) {
@@ -224,6 +224,8 @@ start:
 	        } else {
         	    std::cout << "Notification sent successfully" << std::endl;
 	        }
+
+		sleep(1);
 	}	
 
 //        controlPanelServiceObjectPath = input.length() ? input.c_str() : defaultControlPanelServiceObjectPath;
