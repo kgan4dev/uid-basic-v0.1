@@ -58,9 +58,11 @@ void ControlPanelListenerImpl::sessionEstablished(ControlPanelDevice* device)
             std::vector<qcc::String> languages = it->second->getLanguageSet().getLanguages();
             for (size_t i = 0; i < languages.size(); i++) {
                 std::cout << "Now parsing language: " << languages[i].c_str() << std::endl;
-                Container* rootContainer = it->second->getRootWidget(languages[i]);
-                std::cout << "Finished loading widget: " << rootContainer->getWidgetName().c_str() << std::endl;
-                ControllerUtil::printRootWidget(rootContainer);
+		if (!strcmp("en",languages[i].c_str())) {	
+	                Container* rootContainer = it->second->getRootWidget(languages[i]);
+        	        std::cout << "Finished loading widget: " << rootContainer->getWidgetName().c_str() << std::endl;
+                	ControllerUtil::printRootWidget(rootContainer);
+		}
             }
         }
     }

@@ -28,6 +28,7 @@
 #include <CommonSampleUtil.h>
 #include <AnnounceHandlerImpl.h>
 #include <alljoyn/services_common/LogModulesNames.h>
+#include "UIDPluginCPController.h"
 
 #define SERVICE_PORT 900
 
@@ -45,6 +46,8 @@ NotificationService* conService = 0;
 ControllerNotificationReceiver* receiver = 0;
 qcc::String ControlPanelPrefix = "/ControlPanel/";
 static volatile sig_atomic_t s_interrupt = false;
+
+UIDUtils *myUIDUtils = new UIDUtils();
 
 static void SigIntHandler(int sig)
 {
@@ -158,6 +161,7 @@ int main()
     std::cout << "Finished setup. Waiting for Contollees" << std::endl;
 
     WaitForSigInt();
+    delete myUIDUtils;
     cleanup();
 
     return 0;

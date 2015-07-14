@@ -18,9 +18,12 @@
 #include <alljoyn/controlpanel/ControlPanel.h>
 #include <alljoyn/controlpanel/ActionWithDialog.h>
 #include <iostream>
+#include "UIDPluginCPController.h"
 
 using namespace ajn;
 using namespace services;
+
+extern UIDUtils *myUIDUtils;
 
 qcc::String ControllerUtil::PROPERTY_HINTS_STRINGS[PROPERTY_HINTS_SIZE] = { "", "SWITCH", "CHECKBOX", "SPINNER", "RADIOBUTTON", "SLIDER",
                                                                             "TIMEPICKER", "DATEPICKER", "NUMBERPICKER", "KEYPAD", "ROTARYKNOB",
@@ -94,7 +97,11 @@ void ControllerUtil::printContainer(Container* container, std::vector<Action*>& 
         case ACTION_WITH_DIALOG:
             printBasicWidget(childWidgets[i], "Action", indent + "  ");
             std::cout << indent.c_str() << "  Printing ChildDialog: " << std::endl;
+	    myUIDUtils->setAJDeviceCPActionWidgetField("ChildDialog","Yes");
             printDialog(((ActionWithDialog*)childWidgets[i])->getChildDialog(), indent + "    ");
+	    myUIDUtils->insertAJDeviceCPActionWidgetToDb();
+	    myUIDUtils->insertAJDeviceCPDialogWidgetToDb();
+
             dialogsToExecute.push_back(((ActionWithDialog*)childWidgets[i])->getChildDialog());
             break;
 
@@ -147,15 +154,20 @@ void ControllerUtil::printDialog(Dialog* dialog, qcc::String const& indent)
 {
     printBasicWidget(dialog, "Dialog", indent);
     std::cout << indent.c_str() << "Dialog message: " << dialog->getMessage().c_str() << std::endl;
+    myUIDUtils->setAJDeviceCPDialogWidgetField("message",std::string(dialog->getMessage().c_str()));
     std::cout << indent.c_str() << "Dialog numActions: " << dialog->getNumActions() << std::endl;
+    myUIDUtils->setAJDeviceCPDialogWidgetField("numActions",std::to_string(dialog->getNumActions()));
     if (dialog->getLabelAction1().size()) {
         std::cout << indent.c_str() << "Dialog Label for Action1: " << dialog->getLabelAction1().c_str() << std::endl;
+	myUIDUtils->setAJDeviceCPDialogWidgetField("LabelforAction1",std::string(dialog->getLabelAction1().c_str()));
     }
     if (dialog->getLabelAction2().size()) {
         std::cout << indent.c_str() << "Dialog Label for Action2: " << dialog->getLabelAction2().c_str() << std::endl;
+	myUIDUtils->setAJDeviceCPDialogWidgetField("LabelforAction2",std::string(dialog->getLabelAction2().c_str()));
     }
     if (dialog->getLabelAction3().size()) {
         std::cout << indent.c_str() << "Dialog Label for Action3: " << dialog->getLabelAction3().c_str() << std::endl;
+	myUIDUtils->setAJDeviceCPDialogWidgetField("LabelforAction3",std::string(dialog->getLabelAction3().c_str()));
     }
 }
 
@@ -168,9 +180,30 @@ void ControllerUtil::printBasicWidget(Widget* widget, qcc::String const& widgetT
     if (widget->getLabel().size()) {
         std::cout << indent.c_str() << widgetType.c_str() << " label: " << widget->getLabel().c_str() << std::endl;
     }
+
     if (widget->getBgColor() != UINT32_MAX) {
         std::cout << indent.c_str() << widgetType.c_str() << " bgColor: " << widget->getBgColor() << std::endl;
     }
+
+    if (!strcmp(widgetType.c_str(),"Action")) {
+	myUIDUtils->setAJDeviceCPActionWidgetField("name",std::string(widget->getWidgetName().c_str()));
+	myUIDUtils->setAJDeviceCPActionWidgetField("version",std::to_string(widget->getInterfaceVersion()));
+	myUIDUtils->setAJDeviceCPActionWidgetField("secured",(widget->getIsSecured() ? "Yes" : "No"));
+	myUIDUtils->setAJDeviceCPActionWidgetField("enabled",(widget->getIsEnabled() ? "Yes" : "No"));
+	myUIDUtils->setAJDeviceCPActionWidgetField("label",std::string(widget->getLabel().c_str()));	
+	myUIDUtils->setAJDeviceCPActionWidgetField("bgColor",std::to_string(widget->getBgColor()));
+    } else if (!strcmp(widgetType.c_str(),"Dialog")) {
+	myUIDUtils->setAJDeviceCPActionWidgetField("ChildName",std::string(widget->getWidgetName().c_str()));
+	myUIDUtils->setAJDeviceCPDialogWidgetField("name",std::string(widget->getWidgetName().c_str()));
+	myUIDUtils->setAJDeviceCPDialogWidgetField("version",std::to_string(widget->getInterfaceVersion()));
+	myUIDUtils->setAJDeviceCPDialogWidgetField("secured",(widget->getIsSecured() ? "Yes" : "No"));
+	myUIDUtils->setAJDeviceCPDialogWidgetField("enabled",(widget->getIsEnabled() ? "Yes" : "No"));
+	myUIDUtils->setAJDeviceCPDialogWidgetField("label",std::string(widget->getLabel().c_str()));	
+	myUIDUtils->setAJDeviceCPDialogWidgetField("bgColor",std::to_string(widget->getBgColor()));
+    } else {
+	std::cout << "Something else Widget called" << std::endl;
+    }
+
     printHints(widget, widgetType, indent);
 }
 
@@ -452,7 +485,8 @@ void ControllerUtil::printHints(ajn::services::Widget* widget, qcc::String const
             case ACTION:
             case ACTION_WITH_DIALOG:
                 if (hints[i] == ACTIONBUTTON) {
-                    std::cout << "ACTIONBUTTON";
+                    std::cout << "ACTIONBUTTON";	    
+		    myUIDUtils->setAJDeviceCPActionWidgetField("hints","ACTIONBUTTON");
                 } else {
                     std::cout << "UNKNOWN";
                 }
@@ -487,6 +521,7 @@ void ControllerUtil::printHints(ajn::services::Widget* widget, qcc::String const
             case DIALOG:
                 if (hints[i] == ALERTDIALOG) {
                     std::cout << "ALERTDIALOG";
+		    myUIDUtils->setAJDeviceCPDialogWidgetField("hints","ALERTDIALOG");
                 } else {
                     std::cout << "UNKNOWN";
                 }

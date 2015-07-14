@@ -18,6 +18,8 @@ srcs = env.Glob('*.cc')
 objs = env.Object(srcs)
 objs.extend(cobjs)
 
+env.Prepend(LIBS = ['mysqlclient'])
+
 prog = env.Program('ControlPanelController', objs)
 
 Return('prog')

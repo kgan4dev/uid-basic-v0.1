@@ -87,8 +87,8 @@ name VARCHAR(30) NOT NULL,\
 version VARCHAR(30) NOT NULL,\
 secured VARCHAR(30) NOT NULL,\
 enabled VARCHAR(30) NOT NULL,\
-label VARCHAR(5) NOT NULL,\
-bgColor VARCHAR(100) NOT NULL,\
+label VARCHAR(30) NOT NULL,\
+bgColor VARCHAR(30) NOT NULL,\
 hints VARCHAR(30) NOT NULL,\
 message VARCHAR(30) NOT NULL,\
 numActions VARCHAR(30) NOT NULL,\
@@ -96,7 +96,7 @@ LabelforAction1 VARCHAR(30) NOT NULL,\
 LabelforAction2 VARCHAR(30) NOT NULL,\
 LabelforAction3 VARCHAR(30) NOT NULL)";
 
-	string insertTable = "INSERT INTO UIDTestNotification (name, version,\
+	string insertTable = "INSERT INTO UIDTestDialogWidget (name, version,\
 secured, enabled, label, bgColor, hints, message, numActions, LabelforAction1, LabelforAction2, LabelforAction3 )\
 VALUES ( '" + myAJDeviceCPDialogWidget.name + "','" + myAJDeviceCPDialogWidget.version + "','\
 " + myAJDeviceCPDialogWidget.secured + "','" + myAJDeviceCPDialogWidget.enabled + "','\
@@ -201,7 +201,7 @@ name VARCHAR(30) NOT NULL,\
 version VARCHAR(30) NOT NULL,\
 secured VARCHAR(30) NOT NULL,\
 enabled VARCHAR(30) NOT NULL,\
-label VARCHAR(5) NOT NULL,\
+label VARCHAR(30) NOT NULL,\
 bgColor VARCHAR(100) NOT NULL,\
 hints VARCHAR(30) NOT NULL,\
 ChildDialog VARCHAR(30) NOT NULL,\
