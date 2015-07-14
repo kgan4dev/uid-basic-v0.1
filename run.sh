@@ -15,7 +15,7 @@ elif [ $arch == 'armv61' ]; then
         TARGET_CPU='arm'
 fi
 
-if [ -d "logs/alljoyn" ]; then
+if [ ! -d "logs/alljoyn" ]; then
 	mkdir -p logs/alljoyn
 fi
 
