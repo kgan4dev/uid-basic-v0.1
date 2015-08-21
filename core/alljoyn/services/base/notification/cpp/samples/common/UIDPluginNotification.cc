@@ -72,7 +72,7 @@ string UIDUtils::getAJDeviceNotificationField(string key)
 void UIDUtils::insertAJDeviceNotificationToDb () {
 	string hostname = "localhost";
 	string username = "root";
-	string password = "vedams";
+	string password = "vedams123";
 
 	MYSQL *conn;
 

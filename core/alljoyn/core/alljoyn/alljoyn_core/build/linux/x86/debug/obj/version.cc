@@ -28,7 +28,7 @@ static const unsigned int feature = 0; /* feature is always 0 for core. */
 static const unsigned int bugfix = 'a';
 
 static const char version[] = "v14.06.00a";
-static const char build[] = "AllJoyn Library v14.06.00a (Built Fri Jun 26 10:03:39 UTC 2015 by vedams - Git: uid-basic.git branch: 'master' tag: '<none>' commit ref: c2836cbfc5e44f5bf74c3398de839b4632d63ef2)";
+static const char build[] = "AllJoyn Library v14.06.00a (Built Fri Aug 21 06:08:43 UTC 2015 by vedams - Git: uid-basic-v0.1.git branch: 'master' tag: '<none>' commit ref: 45a85eb02994d0c02b9bd34c6760840aae005f9f)";
 
 const char* ajn::GetVersion()
 {

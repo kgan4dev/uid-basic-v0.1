@@ -17,7 +17,7 @@ void UIDUtils::DeviceToCheckStatus ()
 {
         string hostname = "localhost";
         string username = "root";
-        string password = "vedams";
+        string password = "vedams123";
 
         MYSQL *conn;
 	MYSQL_RES *result;
@@ -112,7 +112,7 @@ void UIDUtils::updateAJDeviceBusStatusToDb ()
 {
         string hostname = "localhost";
         string username = "root";
-        string password = "vedams";
+        string password = "vedams123";
 
 	MYSQL *conn;
 
@@ -177,7 +177,7 @@ Status='" + myAJDeviceProfile.Status + "' WHERE DeviceName='" + myAJDeviceProfil
 void UIDUtils::insertAJDeviceProfileToDb () {
 	string hostname = "localhost";
 	string username = "root";
-	string password = "vedams";
+	string password = "vedams123";
 
 	MYSQL *conn;
 

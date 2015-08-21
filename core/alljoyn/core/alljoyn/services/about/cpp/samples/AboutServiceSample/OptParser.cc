@@ -28,7 +28,7 @@ OptParser::OptParser(int argc, char** argv) :
     argc(argc), argv(argv) {
     port = 900;
     appGUID.assign("000102030405060708090A0B0C0D0E0C");
-    deviceId.assign("1231232145667745675477");
+    deviceId.assign("1234567890123456789012");
     defaultLanguage.assign("en");
 }
 

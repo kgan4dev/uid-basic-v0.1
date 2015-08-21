@@ -78,7 +78,7 @@ string UIDUtils::getAJDeviceCPDialogWidgetField(string key)
 void UIDUtils::insertAJDeviceCPDialogWidgetToDb () {
 	string hostname = "localhost";
 	string username = "root";
-	string password = "vedams";
+	string password = "vedams123";
 
 	MYSQL *conn;
 
@@ -192,7 +192,7 @@ string UIDUtils::getAJDeviceCPActionWidgetField(string key)
 void UIDUtils::insertAJDeviceCPActionWidgetToDb () {
 	string hostname = "localhost";
 	string username = "root";
-	string password = "vedams";
+	string password = "vedams123";
 
 	MYSQL *conn;
 
